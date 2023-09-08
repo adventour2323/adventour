@@ -1,0 +1,433 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>호텔스케쥴</title>
+  <link rel="stylesheet" type="text/css" href="hotel_sc.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="hotel_sc.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" /> 
+
+
+        <script defer src="googlemap_API/index.js"></script>
+        <script
+          defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1E47ve8m8-JtUPPTvXczFPM7MkBkoQCQ&callback=initMap"
+        ></script>
+   
+  </head>
+
+<body>
+
+  <div class="header">
+
+    <div class="header1">
+
+
+      <div class="logo">
+        <img class="logo1" src="img/logo11.png">
+      </div><!--logo-->
+
+      <div class="home">
+        <ul class="homeli">
+          <li class="home11">메뉴</li>
+          <li class="home1">장바구니</li>
+          <li class="home1" onclick = "location.href = 'join.html' ">회원가입</li>
+          <li class="home1">로그인</li>
+          <li class="home11"> 홈</li>
+        </ul>
+      </div><!--home-->
+
+    </div><!--header1-->
+
+    <div class="head11">
+
+      <div class="menu">
+        <ul class="menuli">
+          <li class="menu1"><button class="movet" onclick = "location.href = 'Tour_page.html' "><p>투어</p></button> </li>
+          <li class="menu2"><button class="moveb" onclick = "location.href = 'bus.html' "><p>버스</p></button> </li>
+          <li class="menu3"><button class="moveh"><p>호텔</p></button> </li>
+          <li class="menu4"><button class="moves" onclick = "location.href = 'shop_index.html' "><p>쇼핑</p></button> </li>
+        </ul>
+      </div><!--menu-->
+
+    </div><!--header11-->
+
+  </div><!--header-->
+
+  <div class="pagename">
+    <h1 class="pagename1">HOTEL</h1>
+  </div><!--htitle-->
+
+
+  <div class="schnav"> <!--검색 네비 = sch -->
+
+    <div class="sch1">
+      <h5 class="sch_title">☆ 지역</h5>
+      <input type="text" class="sch_city" name="sch_city" placeholder="지역">
+    </div>
+
+    <div class="sch1">
+      <h5 class="sch_title" >☆ 체크인</h5>
+      <input type="text" class="sch_indate" name="sch_indate" placeholder="YYYY-MM_DD">
+    </div>
+
+    <div class="sch1">
+      <h5 class="sch_title" >☆ 체크아웃</h5>
+      <input type="text" class="sch_outdate" name="sch_outdate" placeholder="YYYY-MM_DD">
+    </div>
+
+    <div class="sch12">
+      <h5 class="sch_title" >☆ 인원</h5>
+      성인 : <input type="text" class="sch_adult" name="sch_adult" placeholder="성인"></br>
+      유아 : <input type="text" class="sch_kid" name="sch_kid" placeholder="유/소아"></br>
+    </div>
+
+    <div class="sch1">
+      <h5 class="sch_title" >☆ 가격</h5>
+      <input type="text" class="sch_minpri" name="sch_minpri" placeholder="최소가격">
+      ~  <input type="text" class="sch_maxpri" name="sch_maxpri" placeholder="최대가격">
+    </div>
+
+    <div class="sch12">
+      <h5 class="sch_title" >☆ 옵션</h5>
+      <input type="checkbox" class="h_twin"  name="h_twin" value="1">트윈</br>
+      <input type="checkbox" class="h_double"  name="h_double" value="1">더블</br>
+      <input type="checkbox" class="h_queen"  name="h_queen" value="1">퀸</br>
+    </div>
+
+
+    <div class="sch13">
+      <button class="sch_btn" type="button" name="sch_btn">검색하기</button>
+    </div>
+
+    </div><!--schnav-->
+  
+  <div class="content">
+
+    <div class="h_map"> <!--왼쪽 지도-->
+      <div id="map" style="height: 300px;"> </div>
+
+    <div class="rinav"> <!--장바구니 등 -->
+
+      <button class="eur" type="button">¢ EUR</button>
+      <button class="cart" type="button">장바구니 담기</button>
+      <button class="pay" type="button">결제하기</button>
+      
+    </div>
+
+
+    </div>
+
+    
+  <div class="schtop">
+
+    <ul class="h_cityli1">
+      <li class="ukli"> <영국></li>
+      <li class="h_lond"><button class="move_lon" onclick = "location.href = 'hotel_sc.html' ">런던</button> </li>
+      <li class="h_liverp"><button class="move_liverp" onclick = "location.href = 'hotel_sc.html' ">리버풀</button> </li>
+      <li class="h_Edinb"><button class="move_Edinb" onclick = "location.href = 'hotel_sc.html' ">에든버러</button> </li>
+    </ul>
+
+    <ul class="h_cityli2">
+      <li class="ityli"> <이탈리아></li>
+      <li class="h_roma"><button class="move_roma" onclick = "location.href = 'hotel_sc.html' ">로마</button> </li>
+      <li class="h_vene"><button class="move_vene" onclick = "location.href = 'hotel_sc.html' ">베네치아</button> </li>
+      <li class="h_mila"><button class="move_mila" onclick = "location.href = 'hotel_sc.html' ">밀라노</button> </li>
+    </ul>
+
+    <ul class="h_cityli3">
+      <li class="frali"> <프랑스></li>
+      <li class="h_paris"><button class="move_paris" onclick = "location.href = 'hotel_sc.html' ">파리</button> </li>
+      <li class="h_marc"><button class="move_marc" onclick = "location.href = 'hotel_sc.html' ">마르세유</button> </li>
+      <li class="h_mona"><button class="move_mona" onclick = "location.href = 'hotel_sc.html' ">모나코</button> </li>
+    </ul>
+
+    <ul class="h_cityli4">
+      <li class="spainli"> <스페인></li>
+      <li class="h_mard"><button class="move_mard" onclick = "location.href = 'hotel_sc.html' ">마드리드</button> </li>
+      <li class="h_barc"><button class="move_barc" onclick = "location.href = 'hotel_sc.html' ">바르셀로나</button> </li>
+      <li class="h_sev"><button class="move_sev" onclick = "location.href = 'hotel_sc.html' ">세비야</button> </li>
+    </ul>
+
+
+</div><!--schtop-->
+
+       <div class="scdform1"> <!--티켓정보-->
+
+
+         <div class="h_mainpic">
+           <img class="h_img1" src="img/h_1.PNG">
+         </div>
+
+         <div class="h_tiinfo">
+
+          <div class="h_name">
+          <h1 class="h_tiname">호텔이름 가져오기</h1>
+          <h3 class="h_tinameko">(한국어 호텔이름 가져오기)</h3>
+          </div>
+
+          <div class="h_grade">
+          <h3 class="h_tigrade">5성급</h3>
+          </div>
+
+          <div class="h_star">
+          <h3 class="h_tistar">리뷰별점</h3>
+          </div>
+
+          <div class="h_addr">
+           <h4 class="h_tiaddr">주소오오오오오ㅗ오오오옹오ㅗ오</h4> 
+          <button class="h_mapbtn" type="button" name="h_mapbtn">지도보기</button>
+          </div>
+
+        
+
+        </div><!--h_tiinfo-->
+
+        <div class="h_priinfo">
+
+         <div class="h_prices">
+          <h2 class="h_tiprice">&#8361;100,000</h2>
+          <button class="move_h" name="move_h" >호텔보기</button>
+         </div>
+
+        <div class="ti_select">  
+
+          <div class="selectTi1">   
+           <input type="checkbox" class="selectTi" name="selectTi" value="1"> 
+           <p class="bbb">선택</p>
+          </div> 
+           
+           <div class="h_heart">
+           <h3 class="beheart"> ♥ </h3>
+          </div>
+
+        </div> <!--ti_select-->
+
+      </div><!--h_priinfo-->
+ 
+    </div><!--scdform-->
+
+    <div class="scdform2"> <!--티켓정보-->
+
+
+      <div class="h_mainpic">
+        <img class="h_img1" src="img/h_1.PNG">
+      </div>
+
+      <div class="h_tiinfo">
+
+       <div class="h_name">
+       <h1 class="h_tiname">호텔이름 가져오기</h1>
+       <h3 class="h_tinameko">(한국어 호텔이름 가져오기)</h3>
+       </div>
+
+       <div class="h_grade">
+       <h3 class="h_tigrade">5성급</h3>
+       </div>
+
+       <div class="h_star">
+       <h3 class="h_tistar">리뷰별점</h3>
+       </div>
+
+       <div class="h_addr">
+        <h4 class="h_tiaddr">주소오오오오오ㅗ오오오옹오ㅗ오</h4> 
+       <button class="h_mapbtn" type="button" name="h_mapbtn">지도보기</button>
+       </div>
+
+     
+
+     </div><!--h_tiinfo-->
+
+     <div class="h_priinfo">
+
+      <div class="h_prices">
+       <h2 class="h_tiprice">&#8361;100,000</h2>
+       <button class="move_h" name="move_h" >호텔보기</button>
+      </div>
+
+     <div class="ti_select">  
+
+       <div class="selectTi1">   
+        <input type="checkbox" class="selectTi" name="selectTi" value="1"> 
+        <p class="bbb">선택</p>
+       </div> 
+        
+        <div class="h_heart">
+        <h3 class="beheart"> ♥ </h3>
+       </div>
+
+     </div> <!--ti_select-->
+
+   </div><!--h_priinfo-->
+
+ </div><!--scdform-->
+
+ <div class="scdform2"> <!--티켓정보-->
+
+
+  <div class="h_mainpic">
+    <img class="h_img1" src="img/h_1.PNG">
+  </div>
+
+  <div class="h_tiinfo">
+
+   <div class="h_name">
+   <h1 class="h_tiname">호텔이름 가져오기</h1>
+   <h3 class="h_tinameko">(한국어 호텔이름 가져오기)</h3>
+   </div>
+
+   <div class="h_grade">
+   <h3 class="h_tigrade">5성급</h3>
+   </div>
+
+   <div class="h_star">
+   <h3 class="h_tistar">리뷰별점</h3>
+   </div>
+
+   <div class="h_addr">
+    <h4 class="h_tiaddr">주소오오오오오ㅗ오오오옹오ㅗ오</h4> 
+   <button class="h_mapbtn" type="button" name="h_mapbtn">지도보기</button>
+   </div>
+
+ 
+
+ </div><!--h_tiinfo-->
+
+ <div class="h_priinfo">
+
+  <div class="h_prices">
+   <h2 class="h_tiprice">&#8361;100,000</h2>
+   <button class="move_h" name="move_h" >호텔보기</button>
+  </div>
+
+ <div class="ti_select">  
+
+   <div class="selectTi1">   
+    <input type="checkbox" class="selectTi" name="selectTi" value="1"> 
+    <p class="bbb">선택</p>
+   </div> 
+    
+    <div class="h_heart">
+    <h3 class="beheart"> ♥ </h3>
+   </div>
+
+ </div> <!--ti_select-->
+
+</div><!--h_priinfo-->
+
+</div><!--scdform-->
+
+<div class="scdform2"> <!--티켓정보-->
+
+
+  <div class="h_mainpic">
+    <img class="h_img1" src="img/h_1.PNG">
+  </div>
+
+  <div class="h_tiinfo">
+
+   <div class="h_name">
+   <h1 class="h_tiname">호텔이름 가져오기</h1>
+   <h3 class="h_tinameko">(한국어 호텔이름 가져오기)</h3>
+   </div>
+
+   <div class="h_grade">
+   <h3 class="h_tigrade">5성급</h3>
+   </div>
+
+   <div class="h_star">
+   <h3 class="h_tistar">리뷰별점</h3>
+   </div>
+
+   <div class="h_addr">
+    <h4 class="h_tiaddr">주소오오오오오ㅗ오오오옹오ㅗ오</h4> 
+   <button class="h_mapbtn" type="button" name="h_mapbtn">지도보기</button>
+   </div>
+
+ 
+
+ </div><!--h_tiinfo-->
+
+ <div class="h_priinfo">
+
+  <div class="h_prices">
+   <h2 class="h_tiprice">&#8361;100,000</h2>
+   <button class="move_h" name="move_h" >호텔보기</button>
+  </div>
+
+ <div class="ti_select">  
+
+   <div class="selectTi1">   
+    <input type="checkbox" class="selectTi" name="selectTi" value="1"> 
+    <p class="bbb">선택</p>
+   </div> 
+    
+    <div class="h_heart">
+    <h3 class="beheart"> ♥ </h3>
+   </div>
+
+ </div> <!--ti_select-->
+
+</div><!--h_priinfo-->
+
+</div><!--scdform-->
+      
+
+
+
+
+
+
+
+
+
+
+  </div><!--content-->
+
+  <footer>
+      <!-- 푸터 박스-->
+      <div class="footerB">
+        <!-- 푸터 네비박스-->
+        <div class="fNvB">
+            <nav><a>가이드투어</a></nav>
+            <nav><a>버스</a></nav>
+            <nav><a>호텔</a></nav>
+            <nav><a>쇼핑몰</a></nav>
+            <nav><a>고객센터</a></nav>
+            <nav><a>게시판</a></nav>
+            <nav><a>장바구니</a></nav>
+            <nav><a>마이페이지</a></nav>
+            <nav><a>회원가입</a></nav>
+            <nav><a>로그인</a></nav>
+        </div>
+
+        <!-- 푸터 회사 정보 박스-->
+        <div class="fInfoB">
+            <span><a><img>이미지 로고</a></span>
+            <span><p><a>회사주소</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                </a></p></span>
+            <span><p><a>회사 정보</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                </a></p></span>
+        </div>
+    </div>
+
+  </footer>
+
+  
+
+</body>
+
+</html>

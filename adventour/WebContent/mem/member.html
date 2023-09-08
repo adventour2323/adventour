@@ -1,0 +1,125 @@
+<!DOCTYPE Html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="member.css">
+        <!-- <script src="member.js"></script> -->
+        <script src=https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js></script>
+        <title>회원가입</title>
+    </head>
+    
+    <body>
+        <!--이미지  회원가입 감싸는 클래스-->
+        <div class="top_box">
+            <!-- 로고이미지 -->
+            <div class="logo_img"><img src="img/main_logo_T_G.png" ></div>
+            <!-- '회원가입'  텍스트 박스-->
+            <div class="memship_t"><h3>회원가입</h3></div>
+        </div><br/>
+        <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+
+        <!--input, select 감싸는 클래스-->
+        <div class="form_box">
+        <form class="form_n" name="myForm" action="member.jsp" method="post">
+            <!-- '가입 정보 입력하기'  텍스트 박스-->
+            <h3 class="margin_top margin_btm">가입 정보 입력하기</h3>
+            <!-- cc태그는 임의로 만든 태그, 텍스트에 토마토색 입히고 싶어서 임의로 만든 것 -->
+            아이디<cc class="star_col_red">*</cc><br/>   <input class="m_size margin_rght" type="text" name="m_id" title="아이디" minlength="8"
+            maxlength="12" placeholder="아이디를 입력해주세요." required>
+            <input class="s_btn btn_color" type="button" name="m_id_btn" value="중복 확인"><br/>
+            비밀번호<cc class="star_col_red">*</cc><br/>  <input class="l_size" type="password" name="m_pw" title="비밀번호" minlength="8"
+            maxlength="15" placeholder="비밀번호(영문+숫자+특수문자 8자 이상)" required> <br/>
+            비밀번호 확인<cc class="star_col_red">*</cc><br/>  <input class="l_size" type="password" name="m_re_pw" title="비밀번호확인" minlength="8"
+            maxlength="15" placeholder="비밀번호 확인" required> <br/><div id="result"></div><br/>
+            이름<cc class="star_col_red">*</cc><br/>  <input class="s_size margin_rght" type="text" name="m_lastname" title="이름" required placeholder="성">
+              <input class="m_size" type="text" name="m_firstname" title="이름" required placeholder="이름"> <br/>
+            닉네임<br/> <input class="l_size" type="text" name="m_nickname" title="닉네임" placeholder="닉네임을 입력해주세요."><br/><br/>
+            
+            <!-- 다음 API 가지고 올 거임. -->
+            주소<cc class="star_col_red">*</cc><br/> 
+            
+            <input class="m_size margin_rght" type="text" name="m_postcode" id="sample4_postcode" placeholder="우편번호">
+            <input class="s_btn btn_color" type="button" onclick="sample4_execDaumPostcode()" value="우편번호 찾기"><br>
+            <input class="l_size " type="text" name="m_addr1" id="sample4_roadAddress" placeholder="도로명주소">
+            <input class="l_size" type="text" name="m_addr2" id="sample4_jibunAddress" placeholder="지번주소"><br/>
+            <span id="guide" style="color:#999;display:none"></span>
+            <input class="m_size" type="text" name="m_addr3" id="sample4_detailAddress" placeholder="상세주소">
+            <input class="s_size margin_lft" type="text" name="m_addr4" id="sample4_extraAddress" placeholder="참고항목"><br/><br/>
+            
+            email<cc class="star_col_red">*</cc> <br/>
+            <input class="m_size margin_rght" type="text" name="m_email" title="email" placeholder="입력해주세요." required>
+            <select class="m_size_email_slct" name="m_emaild" title="email" required>
+                <option>선택</option>
+                <option>@naver.com</option>
+                <option>@gmail.com</option>
+                <option>@kakao.com</option>
+                <option>@nate.com</option>
+                <option>@hotmail.com</option>
+            </select> <br/>
+            
+            
+            연락처1<cc class="star_col_red">*</cc><br/> 
+            <select class="s_size_slct" name="m_pnum1" title="연락처" required>
+                <option>선택</option>
+                <option>010</option>
+                <option>02</option>
+                <option>031</option>
+                <option>063</option>
+            </select>
+            -<input class="s_size margin_lft margin_rght" type="tel" name="m_pnum1_1" title="연락처1" pattern="[0-9]{4}" minlength="4"
+            maxlength="4" required>-<input class="s_size margin_lft" type="tel" name="m_pnum1_2" title="연락처1" pattern="[0-9]{4}" minlength="4"
+            maxlength="4" required> <br/>
+            연락처2<br/> 
+            <select class="s_size_slct" name="m_pnum2" title="연락처">
+                <option>선택</option>
+                <option>010</option>
+                <option>02</option>
+                <option>031</option>
+                <option>063</option>
+            </select>
+            -<input class="s_size margin_lft margin_rght" type="tel" name="m_pnum2_1" title="연락처2" pattern="[0-9]{4}" minlength="4"
+            maxlength="4">-<input class="s_size margin_lft " type="tel" name="m_pnum2_2" title="연락처2" pattern="[0-9]{4}" minlength="4"
+            maxlength="4"> <br/>
+            <br/>
+            
+            <!-- js 파일 필요함. -->
+            생년월일<br/>          
+            <select class="s_size_slct" name="m_birth_y" id="year">
+                <option>선택</option>
+            </select>년
+            <select class="s_size_slct margin_lft" name="m_birth_m" id="month">
+                <option>선택</option>
+            </select>월
+            <select class="s_size_slct margin_lft" name="m_birth_d" id="day">
+                <option>선택</option>
+            </select>일
+            <br/><br/>
+
+            
+            성별<br/>
+            <label><input class="gd" type="radio" name="m_gender" title="성별" value="female"> 여자 </label>
+            <label><input class="gd" type="radio" name="m_gender" title="성별" value="male"> 남자</label><br/><br/><br/>
+
+            <div class="all_ck_box">
+                <div class="ck_al_box">
+                    <input class="margin_rght" type="checkbox" name="all_cked">모두 동의합니다.</div>
+                <div class="ck_box">
+                    <label><input class="margin_rght" type="checkbox" name="cked_age" required>만 14세 이상입니다. (필수)</label><br/>
+                    <label><input class="margin_rght" type="checkbox" name="cked_terms_use" required>이용약관 동의 (필수)</label><br/>
+                    <label><input class="margin_rght" type="checkbox" name="cked_privacy" required>개인정보 수집 및 이용 동의 (필수)</label><br/>
+                    <label><input class="margin_btm margin_rght" type="checkbox" name="cked_slct_agre">할인쿠폰/이벤트/감동적인 뉴스레터 선택 동의 (선택)</label>
+                    <h6 class="ck_txt">SMS, 이메일을 통해 쿠폰 및 이벤트 정보를 받아보실 수 있습니다.</h6>
+                </div>
+            </div>
+            <h2 class="star_col_red">* 필수 입력 값</h2><br/><br/>
+            <input class="l_btn btn_color " type="submit" name="msBtn" value="회원 가입">
+                <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+        </form>
+    </div>
+    </body>
+    <!-- 다음 주소찾기 API js링크-->
+    <!-- <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script> -->
+    
+    </html>
+    <!--페이지 자체의 스타일, 주소 값, 날자 및 이메일, 전화번호에 셀렉사용, -->

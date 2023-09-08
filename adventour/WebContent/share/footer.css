@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+    border-color: #84BF96;
+    /* color: rgb(78, 126, 110); */
+    color:rgb(20, 3, 78);
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+  width: 1903px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+/*---------------------------���-------------------------------------*/
+/*-----------------------------footer---------------------------------*/
+/*Ǫ�� ��ü �ڽ�*/
+.footerB {
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+    background-color:  rgb(117, 165, 236);
+  }
+  
+  /*Ǫ�ͳ׺� ��ü�ڽ�*/
+  .fNvB{
+    width: 100%;
+    height: 35px;
+    opacity: 1;
+    color: white;
+    border-top: 0.5px solid rgb(117, 165, 236);
+    border-bottom: 0.5px solid white;
+    padding-bottom: 3px;
+}
+
+/* ���� ���������� ��¿ �� ���� ���� ��*/
+.fNvB div{
+    width: 70px;
+    height: 20px;
+    float: left;
+    margin-left: 470px;
+}
+/* .fNvB{
+    width: 1300px;
+    height: 35px;
+} */
+
+/*Ǫ�ͳ׺� ���� �ڽ�*/
+.fNvB nav{
+    width: 70px;
+    height: 20px;
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 15px 5px 0px 5px;
+}
+
+
+/*�ΰ��̹���, ȸ���ּ� ��ü �ڽ�*/
+.fInfoB {
+    width: 1300px;
+    height: 130px;
+    opacity: 1;
+    margin-left: 180px;
+    background-color: rgb(117, 165, 236);
+}
+
+/*�ΰ��̹���, ȸ�� �ּ� ���� �ڽ�*/
+.fInfoB img{
+    width: 250px;
+    height: 45px;
+    float: left;
+    background-color: rgb(117, 165, 236);
+    margin-right: 100px;
+    margin-top: 18px;
+    padding: 35px 0px 0px 0px;
+}
+
+.fInfoB p{
+    width: 900px;
+    height: 100px;
+    float: left;
+    color: white;
+    font-size: 13px;
+    padding: 10px 0px 0px 0px;
+    margin-top: 20px;
+    text-align: left;
+    line-height: 30px;
+}

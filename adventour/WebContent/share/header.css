@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+    border-color: #84BF96;
+    /* color: rgb(78, 126, 110); */
+    color:rgb(20, 3, 78);
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+  width: 1903px;
+  margin: 0px;
+  overflow-x: hidden;
+}
+
+/*---------------------------���-------------------------------------*/
+.header {
+  width: 1903px;
+  height: 132px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: rgb(20, 3, 78);
+}
+
+ /* --------------����� �ΰ� �� Ȩ �޴�-----------------*/ 
+ #logo{
+  margin-top: 10px;
+  margin-left: 400px;   
+}
+
+.homeli li,.menuli li {
+  list-style: none;
+  float: left;
+}
+
+.logo {
+  width: 200px;
+  height: 70px;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 300px;
+  text-align: center;
+
+}
+.logo1{
+  width: 300px;
+  height: 80px;
+}
+
+.home {
+  width: 400px;
+  height: 25px;
+  margin-bottom: 55px;
+  margin-right: 270px;
+  float: right;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+
+.homeli {
+  margin-top: 3px;
+}
+.home11 {
+  width: 40px;
+  height: 25px;
+  margin-right: 10px;
+  text-align: center;
+  float: right;
+}
+
+.home1 {
+  width: 60px;
+height: 25px;
+margin-right: 10px;
+text-align: center;
+float: right;
+}
+
+
+.menu {
+  width: 1200px;
+  height: 42px;
+  display: flex;
+  float: left;
+  margin-left: 650px;
+  margin-top: -20px;
+
+}
+
+.menuli {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 10px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.menu1,.menu3,.menu4{
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+
+}
+.menu2{
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px 15px 0px 0px;
+}
+.menuli p{
+  margin-top: 2px;
+}
+.movet{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+.moveh{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+.moves{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+
+.moveb{
+  font-size: 18px;
+  width: 100px;
+  height: 32px;
+  text-align: center;
+  background-color: rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  color: white; /* ������� ���� */
+}
+.movec{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+  margin-left: 10px;
+}
+.movem{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+  margin-left: 25px;
+}
+/*�����̵� �ٿ�޴�*/
+/*top �����̵�޴�*/
+.schtop{
+  z-index:2;
+  position: absolute;
+  width: 1903px;
+  height: 150px;
+  background-color:rgb(117, 165, 236);
+  margin-top: -30px;
+
+}
+.schtop li{
+  list-style: none;
+  margin-left: 650px;
+}
+.uk_top {
+  margin-top: -5px;
+  margin-left: 50px;
+
+}
+.ity_top{
+  margin-left: 200px;
+  margin-top: -117px;
+}
+.fra_top{
+  margin-left: 350px;
+  margin-top: -120px;
+}
+.spain_top{
+  margin-left: 500px;
+  margin-top: -120px;
+}
+.ukli,.ityli,.frali,.spainli{
+  list-style: none;
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.move_lon,.move_roma,.move_paris,.move_mard{
+ margin-top: 10px;
+  width: 80px;
+  text-align: left;
+  font-weight: bold;
+  background-color:rgb(117, 165, 236);
+  border: none;
+}
+.move_liverp,.move_Edinb,.move_vene,.move_mila,.move_marc,.move_mona,.move_barc,.move_sev{
+  margin-top: 5px;
+  width: 80px; 
+  background-color:rgb(117, 165, 236);
+  border: none;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+.menuli>li:nth-child(n+1):nth-child(-n+3):hover {
+    color: white;
+    background-color:  rgb(20, 3, 78);
+}
+

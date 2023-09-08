@@ -1,0 +1,516 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Pretendard-Regular';
+}
+
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 1903px;
+  height: 1650px;
+
+}
+
+.header {
+  width: 100%;
+  height: 130px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: rgb(20, 3, 78);
+}
+
+.header1 {
+  width: 100%;
+  height: 110px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  float: left;
+}
+
+.logo {
+  width: 300px;
+  height: 80px;
+  margin: auto;
+  margin-top: 15px;
+  margin-left: 800px;
+  text-align: center;
+  color:rgb(236, 236, 162);
+
+}
+.logo1{
+  width: 300px;
+  height: 80px;
+}
+.home {
+  width: 400px;
+  height: 25px;
+  margin-bottom: 55px;
+  margin-right: 270px;
+  float: right;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+
+.homeli {
+  margin-top: 3px;
+}
+.home11 {
+  width: 40px;
+  height: 25px;
+  margin-right: 10px;
+  text-align: center;
+  float: right;
+}
+
+.home1 {
+  width: 60px;
+height: 25px;
+margin-right: 10px;
+text-align: center;
+float: right;
+}
+
+.himg {
+  width: 20px;
+  height: 20px;
+}
+
+.head11 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.menu {
+  width: 500px;
+  height: 30px;
+  display: flex;
+  float: left;
+  margin-left: 400px;
+}
+
+.menuli {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 10px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.menu1,.menu3,.menu4{
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(153, 171, 233);
+  border-radius: 15px 15px 0px 0px;
+
+}
+.menu2{
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+  background-color:rgb(20, 3, 78);
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color:rgb(117, 165, 236);
+  border-radius: 15px 15px 0px 0px;
+}
+.menuli p{
+  margin-top: 2px;
+}
+.menuli a{
+  margin-top: 7px;
+  text-decoration-line: none;
+  text-decoration-color: rgb(20, 3, 78);
+}
+.movet{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(153, 171, 233);
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+.moveh{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(153, 171, 233);
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+.moves{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(153, 171, 233);
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+
+.moveb{
+  font-size: 18px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background-color:rgb(20, 3, 78);
+  color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color:rgb(117, 165, 236);
+  border-radius: 15px 15px 0px 0px;
+}
+ 
+
+
+  .busmain{
+    width: 1903px;
+    height: 550px;
+    margin-top: 42px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .busmaintit{
+    color: white;
+    position: absolute;
+    top:300px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+
+  .busmainpic{
+    position: absolute;
+    margin-top: -20px;
+    width: 1903px;
+    height: 550px;
+  }
+
+
+  .mimg {
+    width: 30px;
+    height: 30px;
+    padding-top: 0px;
+  
+  }
+
+
+  /*----------------------------------------content---------------------------*/
+  .content {
+    width: 1100px;
+    height: 1300px;
+    margin-top: -780px;
+    margin-left: 400px;
+    border-style: dashed;
+    border-width:1px;
+   
+  }
+ 
+
+  .btitle {  /*헤더에 현재페이지 표시*/
+    margin-top: 30px;
+  }
+  .busbus1{ /*검색차 메뉴 위 버스 글씨*/
+    float:left;
+    margin-left: 225px;
+    font-size: 45px;
+    color: rgb(2, 48, 2);
+    text-align: center;
+    padding-top: 10px;
+    }
+    
+
+
+/*----------------------------------------nav-------------------------*/
+.rinav{
+    position: fixed;
+    top:200px;
+    right: 250px;
+    width: 150px;
+    height: 250px;
+}
+.eur, .cart,.pay{
+    width: 120px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 5px;
+    border-radius: 20px;
+    background-color:rgb(117, 165, 236);
+    color:white;
+}
+
+.eur:hover {
+    background-color:rgb(20, 3, 78);
+}
+.cart:hover {
+    background-color: rgb(20, 3, 78);
+}
+.pay:hover {
+    background-color: rgb(20, 3, 78);
+}
+
+/*--------------------------------------sch nav 검색창 네비---------------------------*/
+ /* 왼쪽 검색네비*/
+.bschnav{
+  font-weight: bold;
+   width: 240px;
+   height: 700px;
+   border-style: solid;
+   border-width: 1.5px;
+   color:rgb(20, 3, 78);
+   margin-left: 160px;
+   margin-top: 100px;
+
+}
+
+.bsch1{
+ width: 200px;
+ height: 70px;
+ float: left;
+ margin-top: 15px;
+ margin-left: 15px;
+}
+.bsch_title{
+ margin-top: 0px;
+ margin-bottom: 0px;
+ font-size: 18px;
+ padding: 0px;
+}
+.bsch_decity,.bsch_arcity,.bsch_detime{
+ width: 190px;
+ height: 30px;
+ float: left;
+ margin-left: 0px;
+ margin-top: 10px;
+  padding-left: 10px;
+  color: rgb(20, 3, 78);
+}
+.bsch12{
+ width: 200px;
+ height: 110px;
+ float: left;
+ margin-top: 15px;
+ margin-left: 15px;
+}
+.bsch_adult,.bsch_kid{
+ width: 80px;
+ height: 30px;
+ margin-left: 0px;
+ margin-top: 10px;
+ padding-left: 10px;
+ color: rgb(20, 3, 78);
+}
+
+
+.b_ptype,.b_etype{
+ width: 20px;
+ height: 20px;
+ margin-left: 3px;
+ margin-top: 10px;
+ border: solid;
+}
+.b_etype{
+ margin-top: -50px;
+}
+.b_ptype1,.b_etypet{
+  margin-left: 30px;
+  margin-top: -23px;
+}
+
+.bsch_btn{
+ width: 80px;
+ height: 30px;
+ margin-left: 80px;
+ margin-top: 70px;
+}
+
+
+/*-------------------------------------스케쥴 티켓 내용----------------------------*/
+.scdform{
+    border-style: dashed;
+    width: 800px;
+    height: 150px;
+    margin-top: 70px;
+    margin-left: 150px;
+}
+.timeinfo{
+    
+    width: 560px;
+    height: 200px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+/*시간 가져오기*/
+.ti_time{
+
+    width: 200px;
+    height: 20px;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* 출발지 도착지 가져오기*/
+.ti_city{
+
+    width: 500px;
+    height: 25px;
+    margin-top: 25px;
+    margin-left: 40px;
+    font-size: 20px;
+
+}
+
+/* 버스 회사 가져오기*/
+.ti_buscom{
+
+  width: 200px;
+  height: 25px;
+  margin-top: 20px;
+  margin-left: 40px;
+  font-size: 20px;
+
+}
+
+
+
+/*소요시간  = 도착시간 - 출발시간*/
+.ti_leadtime{
+  font-size: 23px;
+  font-weight: bold;
+  width: 80px;
+  height: 50px;
+  margin-left: 500px;
+  margin-top: -160px;
+}
+.ti_leadtime input[type=text] {
+    width: 80px;
+    height: 50px;
+    border:none;
+    text-align: center;
+}
+
+.leadtime{
+  font-size: 23px;
+}
+
+/*선택 체크박스*/
+
+.ti_select{
+  width: 160px;
+  height: 120px;
+  margin-left: 620px;
+  margin-top: -100px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.ti_price{
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.beheart{
+width: 30px;
+height: 30px;
+font-size: 30px;
+margin-top:-300px;
+float: right;
+
+}
+
+
+/*----------------------------------------footer---------------------------------*/
+footer{
+  width: 100%;
+  height: 200px;
+  color: rgb(2, 48, 2);
+  font-weight: bold;
+  font-size: 20px;
+  margin-top:0px;
+  background-color:  rgb(153, 171, 233);
+overflow: hidden;
+}
+
+footer .footerB{
+  width: 1903px;
+  height: 200px;
+  align-items: center;
+  text-align: center;
+  margin-left: 300px;
+  font-size: 10px;
+  background-color: rgb(153, 171, 233);
+
+  border-width: 0px 0px 0px 0px;
+}
+
+.footerB .fNvB{
+  width: 1500px;
+  height: 50px;
+  margin-left: 300px;
+  font-size: 13px;
+  padding: 20px 10px 0px 10px;
+  border-width: 0px 0px 0px 0px;
+}
+
+.fNvB nav{
+  width: 60px;
+  height: 18px;
+  float: left;
+  padding: 0px 5px  0px  5px;
+  border-width: 0px 0.2px 0px 0px;
+  border-color: white;
+  border-style: solid;
+}
+
+.footerB .fInfoB{
+  width: 1500px;
+  height: 130px;
+  margin-left: 150px;
+  padding-bottom: -20px;
+  border-width: 0px 0px 0px 0px;
+}
+
+.fInfoB span{
+  width: 300px;
+  height: 130px;
+  float: left;
+  border-width: 0px 0px 0px 0px;
+}

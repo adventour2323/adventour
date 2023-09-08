@@ -1,0 +1,212 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="utf-8">
+  <title>버스스케쥴</title>
+  <link rel="stylesheet" type="text/css" href="bus_sc.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="bus_sc.js"></script>
+  </head>
+
+  <body>
+
+    <div class="header">
+  
+      <div class="header1">
+  
+      
+  
+        <div class="logo">
+          <img class="logo1" src="img/logo11.png">
+        </div><!--logo-->
+  
+      
+        <div class="home">
+          <ul class="homeli">
+            <li class="home11">메뉴</li>
+            <li class="home1">장바구니</li>
+            <li class="home1" onclick = "location.href = 'join.html' ">회원가입</li>
+            <li class="home1">로그인</li>
+            <li class="home11"> 홈</li>
+          </ul>
+        </div><!--home-->
+  
+      </div><!--header1-->
+  
+      <div class="head11">
+  
+        <div class="menu">
+          <ul class="menuli">
+            <li class="menu1"><button class="movet" onclick = "location.href = 'Tour_page.html' "><p>투어</p></button> </li>
+            <li class="menu2"><button class="moveb" ><p>버스</p> </li>
+            <li class="menu3"><button class="moveh" onclick = "location.href = 'hotel.html' "><p>호텔</p></button> </li>
+            <li class="menu4"><button class="moves" onclick = "location.href = 'shop_index.html' "><p>쇼핑</p></button> </li>
+        </div><!--menu-->
+  
+      </div><!--header11-->
+  
+    </div><!--header-->
+  <div class="busbus">
+    <h1 class="busbus1">BUS</h1>
+  </div><!--htitle-->
+
+
+  <div class="bschnav"> <!--검색 네비 = sch -->
+    <div class="bsch1">
+      <h5 class="bsch_title">☆ 출발지역</h5>
+      <input type="text" class="bsch_decity" name="bsch_decity" placeholder="LONDON">
+    </div>
+
+    <div class="bsch1">
+      <h5 class="bsch_title" >☆ 도착지</h5>
+      <input type="text" class="bsch_arcity" name="bsch_arcity" placeholder="PARIS">
+    </div>
+
+    <div class="bsch1">
+      <h5 class="bsch_title" >☆ 출발시각</h5>
+      <input type="text" class="bsch_detime" name="bsch_detime" placeholder="21:30">
+    </div>
+
+    <div class="bsch12">
+      <h5 class="bsch_title" >☆ 인원</h5>
+      성인 : <input type="text" class="bsch_adult" name="bsch_adult" placeholder="성인"></br>
+      유아 : <input type="text" class="bsch_kid" name="bsch_kid" placeholder="유/소아"></br>
+    </div>
+
+
+    <div class="bsch12">
+      <h5 class="bsch_title" >☆ 옵션</h5>
+      <input type="checkbox" id="b_ptype" class="b_ptype"  name="b_ptype" value="1">
+      <p class="b_ptype1">프리미엄</p>
+      <input type="checkbox" class="b_etype"  name="b_etype" value="1">
+      <p class="b_etypet">일반</p></br>
+    </div>
+
+
+    <div class="bsch13">
+      <button class="bsch_btn" type="button" name="bsch_btn">검색하기</button>
+    </div>
+    </div><!--schnav-->
+  
+  <div class="content">
+
+    <div class="rinav"> <!--장바구니 등 -->
+
+      <button class="eur" type="button">¢ EUR</button>
+      <button class="cart" type="button">장바구니 담기</button>
+      <button class="pay" type="button">결제하기</button>
+      
+      </div>
+
+    
+
+       <div class="scdform"> <!--티켓정보-->
+
+        <div class="timeinfo">
+
+          <div class="ti_time">
+              10:30 - 12:30
+          </div><!--ti_time-->
+           
+          <div class="ti_city">
+            런던(London) - 에든버러(Edenburgh)
+          </div><!--ti_city-->
+
+          <div class="ti_buscom">
+            LD BUS
+          </div><!--ti_city-->
+
+        </div> <!--timeinfo-->
+
+          <div class="ti_leadtime">
+           2:00
+          </div>
+
+          <div class="ti_select">
+           <p class="ti_price">&#8361; 20,000</p>    
+           <div class="selectTi1">   
+            <input type="checkbox" class="selectTi" name="selectTi" value="선택" >선택
+            <p class="beheart"> ♥ </p>
+          </div> 
+       
+ 
+          </div>
+
+
+
+
+
+        </div><!--scdform-->
+
+        <div class="scdform2">
+          
+
+        </div>
+
+        <div class="scdform3">
+          
+
+        </div>
+
+        <div class="scdform4">
+          
+
+        </div>
+
+      
+
+
+
+
+
+
+
+
+
+
+  </div><!--content-->
+
+  <footer>
+      <!-- 푸터 박스-->
+      <div class="footerB">
+        <!-- 푸터 네비박스-->
+        <div class="fNvB">
+            <nav><a>가이드투어</a></nav>
+            <nav><a>버스</a></nav>
+            <nav><a>호텔</a></nav>
+            <nav><a>쇼핑몰</a></nav>
+            <nav><a>고객센터</a></nav>
+            <nav><a>게시판</a></nav>
+            <nav><a>장바구니</a></nav>
+            <nav><a>마이페이지</a></nav>
+            <nav><a>회원가입</a></nav>
+            <nav><a>로그인</a></nav>
+        </div>
+
+        <!-- 푸터 회사 정보 박스-->
+        <div class="fInfoB">
+            <span><a><img>이미지 로고</a></span>
+            <span><p><a>회사주소</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                </a></p></span>
+            <span><p><a>회사 정보</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                    우리 회사 개쩔어</br>
+                </a></p></span>
+        </div>
+    </div>
+
+  </footer>
+
+  
+
+</body>
+
+</html>

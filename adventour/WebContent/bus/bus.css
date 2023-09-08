@@ -1,0 +1,738 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Pretendard-Regular';
+}
+
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 1903px;
+  height: 2600px;
+
+}
+/*---------------------------헤더-------------------------------------*/
+.header {
+  width: 1903px;
+  height: 132px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: rgb(20, 3, 78);
+}
+
+ /* --------------헤더안 로고 및 홈 메뉴-----------------*/ 
+ #logo{
+  margin-top: 10px;
+  margin-left: 400px;   
+}
+
+.homeli li,.menuli li {
+  list-style: none;
+  float: left;
+}
+
+.logo {
+  width: 200px;
+  height: 70px;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 300px;
+  text-align: center;
+
+}
+.logo1{
+  width: 300px;
+  height: 80px;
+}
+
+.home {
+  width: 400px;
+  height: 25px;
+  margin-bottom: 55px;
+  margin-right: 270px;
+  float: right;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+
+.homeli {
+  margin-top: 3px;
+}
+.home11 {
+  width: 40px;
+  height: 25px;
+  margin-right: 10px;
+  text-align: center;
+  float: right;
+}
+
+.home1 {
+  width: 60px;
+height: 25px;
+margin-right: 10px;
+text-align: center;
+float: right;
+}
+
+
+.menu {
+  width: 1200px;
+  height: 42px;
+  display: flex;
+  float: left;
+  margin-left: 650px;
+  margin-top: -20px;
+
+}
+
+.menuli {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 10px;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.menu1,.menu3,.menu4{
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+
+}
+.menu2{
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+  border-radius: 15px 15px 0px 0px;
+}
+.menuli p{
+  margin-top: 2px;
+}
+.movet{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+.moveh{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+.moves{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+
+.moveb{
+  font-size: 18px;
+  width: 100px;
+  height: 32px;
+  text-align: center;
+  background-color: rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  color: white; /* 흰색으로 변경 */
+}
+.movec{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+  margin-left: 10px;
+}
+.movem{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 32px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 2px 2px 0px 2px;
+  border-color: #fff;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+  margin-left: 25px;
+}
+/*슬라이드 다운메뉴*/
+/*top 슬라이드메뉴*/
+.schtop{
+  z-index:2;
+  position: absolute;
+  width: 1903px;
+  height: 150px;
+  background-color:rgb(117, 165, 236);
+  margin-top: -30px;
+
+}
+.schtop li{
+  list-style: none;
+}
+.uk_top {
+  margin-top: -5px;
+  margin-left: 50px;
+
+}
+.ity_top{
+  margin-left: 200px;
+  margin-top: -117px;
+}
+.fra_top{
+  margin-left: 350px;
+  margin-top: -120px;
+}
+.spain_top{
+  margin-left: 500px;
+  margin-top: -120px;
+}
+.ukli,.ityli,.frali,.spainli{
+  list-style: none;
+  font-size: 15px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+.move_lon,.move_roma,.move_paris,.move_mard{
+ margin-top: 10px;
+  width: 80px;
+  text-align: left;
+  font-weight: bold;
+  background-color:rgb(117, 165, 236);
+  border: none;
+}
+.move_liverp,.move_Edinb,.move_vene,.move_mila,.move_marc,.move_mona,.move_barc,.move_sev{
+  margin-top: 5px;
+  width: 80px; 
+  background-color:rgb(117, 165, 236);
+  border: none;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+/*----------------------------버스 메인 사진 내용--------------------------*/
+  .busmain{
+    z-index: 0;
+    position:relative;
+    width: 1903px;
+    height: 550px;
+    margin-top:-30px;
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+  .busmainpic{
+    position: absolute;
+    margin-top: 0px;
+    width: 1903px;
+    height: 550px;
+  }
+  .busmaintit{
+    color: white;
+    position: absolute;
+    top:100px;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    
+  }
+  .b_picti{
+    color:#fff;
+    font-size: 15px;
+    background-color: rgb(20, 3, 78,0.9);
+    width: 1200x;
+    height: 20px;
+    margin-left: -200px;
+    padding-top: 10px;
+  }
+  .sch1{
+    text-align: left;
+    margin-left: 40px;
+  }
+  .sch2{
+    margin-top: -30px;
+    margin-left:-40px;
+  }
+  .sch3{
+
+    margin-top: -33px;
+    margin-left: 410px;
+  }
+
+ 
+  
+/* 메인사진 안 검색 박스*/
+.b_piccont{
+  width: 900px;
+  height: 50px;
+  font-size: 25px;
+  text-align: center;
+  position: absolute;
+  padding: 200px 0px 10px 250px;
+  border-radius: 10px;
+  margin-left: 350px;
+  margin-top: 100px;
+  
+}
+.b_picsch{
+  background-color: rgb(20, 3, 78,0.9);
+  width: 1200x;
+  height: 100px;
+  margin-left: -200px;
+  margin-top: 0px;
+}
+.b_mainde,.b_mainarr,.b_maintime,.b_maintpeo{
+  width: 220px;
+  height: 40px;
+  padding-top: 1px;
+  border-radius: 5px;
+  margin-right: 0px;
+  
+}
+.b_piccont input[type="text"],
+.b_piccont button {
+  display: inline-block;
+  margin-right: 0px;
+  margin-bottom: 10px;
+  margin-left: 0px;
+  margin-top: 20px;
+}
+
+
+/*버튼*/
+.b_maintbtn {
+  font-size: 15px;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 0px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+
+
+  /*----------------------------------------content---------------------------*/
+
+  .content {
+    width: 1600px;
+    height: 2150px;
+    margin-top: 70px;
+    margin-left: 150px;
+
+  }
+/*---------------------여행지 제목표시 ----------------------*/
+  .btitle1 { 
+    margin-top: 30px;
+    margin-left: 100px;
+  }
+.b_de{
+  width: 1600px;
+    height: 800px;
+    margin-left: 0px;
+
+}
+
+  .busUK {
+    width: 255px;
+    height: 1000px;
+    margin-left: 175px;
+    float: left;
+  }
+
+  .busItaly {
+    width: 255px;
+    height: 1000px;
+    margin-left: 70px;
+    float: left;
+  }
+
+  .busFrance {
+    width: 255px;
+    height: 1000px;
+    margin-left: 70px;
+    float: left;
+  }
+  .busSpain{
+    width: 255px;
+    height: 1000px;
+    margin-left: 70px;
+    float: left;
+  }
+/*------------------각 지역별 위치 속성지정--------------------*/
+  .londonimg, .romaimg, .parisimg,.mardimg{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    }
+    .liverimg, .veneimg, .monaimg,.barceimg{
+      position: relative;
+      width: 100%;
+      height: 300px;
+      overflow: hidden;
+      margin-top: 50px;
+    }
+
+  
+  .bLonimg,.bRomaimg,.bParisimg,.bMardimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+  }
+  .bLiverimg, .bVeneimg, .bMonaimg,.bBarceimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+  }
+
+  .londonname,.livername,.romaname,.venename,.parisname,.monaname,.mariname,.barcename{
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+/*-----------------------------------------------인기노선----------------------------------------------*/
+ .b_pop{
+
+  width: 1600px;
+  height: 750px;
+  margin-top: -200px;
+  float: left;
+  font-weight: bold;
+
+ }
+.pop_title{
+  margin-left: 600px;
+  font-weight: bold;
+}
+.pop_title1{
+  margin-left: 650px;
+  font-weight: bold;
+}
+.pop1{
+  border: solid 1px;
+  border-radius: 15px 15px 15px 15px;
+    filter: drop-shadow(10px 6px 6px #c3c3c3);
+ margin-top: 50px;
+  margin-left: 170px;
+  width: 550px;
+  height: 250px;
+  
+}
+.pop11{
+
+  width: 600;
+  height: 30px;
+}
+.pop1_pic1{
+  width: 180px;
+  height: 180px;
+  margin-left: 60px;
+  margin-top: -10px;
+}
+.pop1_pic2{
+  width: 180px;
+  height: 180px;
+  margin-left: 80px;
+  margin-top: -10px;
+}
+.pop11 li{
+ float: left;
+ list-style: none; 
+}
+.popcity1{
+  width: 180px;
+  height: 30px;
+  margin-left: 20px;
+  text-align: center;
+}
+.arrow{
+  width: 80px;
+  height: 30px;
+  margin-left: 0px;
+  text-align: center;
+}
+.popcity2{
+  width: 180px;
+  height: 30px;
+  margin-left: 0px;
+  text-align: center;
+}
+.pop2{
+  border: solid 1px;
+  border-radius: 15px 15px 15px 15px;
+  filter: drop-shadow(10px 6px 6px #c3c3c3);
+  margin-left: 880px;
+  width: 550px;
+  height: 250px;
+  margin-top: -250px;
+}
+.pop3{
+  border: solid 1px;
+  border-radius: 15px 15px 15px 15px;
+  filter: drop-shadow(10px 6px 6px #c3c3c3);
+  margin-top: 50px;
+  margin-left: 170px;
+  width: 550px;
+  height: 250px;
+}
+.pop4{
+  border: solid 1px;
+  border-radius: 15px 15px 15px 15px;
+  filter: drop-shadow(10px 6px 6px #c3c3c3);
+  margin-left: 880px;
+  width: 550px;
+  height: 250px;
+  margin-top: -250px;
+}
+
+/*------------------------------------------hot sale-------------------------------*/
+.b_sale{
+  width: 1600px;
+  height: 550px;
+  margin-top:650px;
+  overflow : hidden;
+}  
+.bsale_title{ 
+  width: 1600px;
+  height: 100px;
+  color: red;
+  font-weight: bold;
+  animation: blink-effect 2s step-end infinite;
+  margin-left: 100px;
+}
+@keyframes blink-effect {
+  50% {
+    opacity: 0;
+  }
+}
+/*-----------------------스위퍼 내용--------------------------*/
+
+
+.b_sale ul {
+  margin-top: 5px;
+ border:  solid 1px;
+ width: 157px;
+ height: 90px;
+ border-radius: 10px;
+
+}
+.sale1_ul li{
+  list-style: none;
+  font-weight: bold;
+  margin-left: 0px;
+}
+.sale1_rote{
+  font-size: 17px;
+}
+.sale1_time{
+  margin-top: 5px;
+  font-size: 14px;
+}
+.sale1_pri{
+  margin-top: 5px;
+  font-size: 15px;
+  text-decoration: line-through;
+}
+.sale1_spri{
+  margin-top: 5px;
+  font-size:17px;
+  color: red;
+
+}
+.awards .inner {
+  padding: 0;
+  width: 1600px;
+  height: 350px;
+}
+ .awards  {
+  width: 1570px;
+   height: 350px;
+   margin-left:0px;
+   overflow: hidden;
+   padding-left: 30px;
+   padding-right: 30px;
+   overflow: hidden;
+ 
+ }
+ .swiper {
+  width: 1400px;
+  height: 320px;
+  margin-left:75px;
+  overflow: hidden;
+  padding-left: 0px;
+  padding-right: 0px;
+
+}
+
+
+ 
+ .swiper-prev,
+ .swiper-next {
+   width: 35px;
+   height: 35px;
+   color:black;
+   background-color: white;
+   border: white;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: xx-large;
+ 
+ }
+ .swiper-prev{
+  margin-top: -190px;
+  margin-left: 30px;
+ }
+.swiper-next{
+  margin-top: -25px;
+  float: right;
+  margin-right: 30px;
+ }
+ .swiper-slide {
+  width: 150px;
+  height: 150px;
+  margin-top: 0px;
+  margin-left:50px;
+  
+  filter: drop-shadow(10px 6px 6px #c3c3c3); /*그림자*/
+ }
+
+ .swiper-slide img{
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  filter: drop-shadow(10px 6px 6px #c3c3c3); /*그림자*/
+ }
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ /*-----------------------------footer---------------------------------*/
+ .footerB {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+  align-items: center;
+  background-color:rgb(117, 165, 236);
+  margin-bottom: 0px;
+}
+
+/*푸터네비 전체박스*/
+.fNvB{
+  width: 100%;
+  height: 35px;
+  opacity: 1;
+  color: white;
+  border-top: 0.5px solid rgb(117, 165, 236);
+  border-bottom: 0.5px solid white;
+}
+
+/* 왼쪽 마진때문에 어쩔 수 없이 만든 애*/
+.fNvB div{
+  width: 70px;
+  height: 20px;
+  float: left;
+  margin-left: 550px;
+}
+/* .fNvB{
+  width: 1300px;
+  height: 35px;
+} */
+
+/*푸터네비 개별 박스*/
+.fNvB nav{
+  width: 70px;
+  height: 20px;
+  float: left;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 15px 5px 0px 5px;
+}
+
+
+/*로고이미지, 회사주소 전체 박스*/
+.fInfoB {
+  width: 1300px;
+  height: 130px;
+  opacity: 1;
+  margin-left: 180px;
+}
+
+/*로고이미지, 회사 주소 개별 박스*/
+.fInfoB img{
+  width: 200px;
+  height: 80px;
+  float: left;
+  margin-right: 200px;
+  padding: 35px 0px 0px 0px;
+}
+
+.fInfoB p{
+  width: 400px;
+  height: 100px;
+  float: left;
+  color: white;
+  font-size: 13px;
+  padding: 10px 0px 0px 0px;
+}

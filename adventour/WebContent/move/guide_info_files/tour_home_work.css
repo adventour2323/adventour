@@ -1,0 +1,540 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: 'Pretendard-Regular';
+}
+
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 1903px;
+  height: 1650px;
+
+}
+
+.header {
+  width: 1903;
+  height: 130px;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  color: rgb(20, 3, 78);
+}
+
+.header1 {
+  width: 100%;
+  height: 110px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menuli li {
+  list-style: none;
+  float: left;
+}
+
+.logo {
+  width: 300px;
+  height: 80px;
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 800px;
+  text-align: center;
+  color:rgb(236, 236, 162);
+
+}
+.logo1{
+  width: 300px;
+  height: 80px;
+}
+
+.home {
+  width: 400px;
+  height: 25px;
+  margin-bottom: 55px;
+  margin-right: 270px;
+  float: right;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.homeli {
+  margin-top: 3px;
+  list-style: none;
+}
+.home11 {
+  width: 40px;
+  height: 25px;
+  margin-right: 10px;
+  text-align: center;
+  float: right;
+
+}
+
+.home1 {
+width: 60px;
+height: 25px;
+margin-right: 10px;
+text-align: center;
+float: right;
+}
+
+.himg {
+  width: 20px;
+  height: 20px;
+}
+
+.head11 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+}
+
+.menu {
+  width: 1000px;
+  height: 40px;
+  display: flex;
+  float: left;
+  margin-left: 450px;
+  border-bottom: solid rgb(153, 171, 233) ;
+}
+
+.menuli {
+  font-weight: bold;
+  font-size: 17px;
+  margin-top: 10px;
+  padding-left: 0px;
+  text-align: center;
+
+}
+
+.menu1,.menu2,.menu4{
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(153, 171, 233);
+  border-radius: 15px 15px 0px 0px;
+
+}
+.menu3{
+  margin-right: 5px;
+  width: 100px;
+  height: 30px;
+  border-color: rgb(153, 171, 233);
+  border-style: solid;
+  border-width: 1px;
+  border-color:reds;
+  border-radius: 15px 15px 0px 0px;
+}
+.menuli p{
+  margin-top: 2px;
+}
+
+.moveh{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(153, 171, 233);
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+.moveb{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(153, 171, 233);
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+.movet {
+  font-size: 18px;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  background-color: rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(20, 3, 78);
+  border-radius: 15px 15px 0px 0px;
+  color: white; /* 흰색으로 변경 */
+}
+.moves{
+  font-size: 18px;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  color:rgb(20, 3, 78);
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgb(153, 171, 233);
+  border-radius: 15px 15px 0px 0px;
+  background-color: #fff;
+}
+
+/*----------------------------------------content---------------------------*/
+
+
+.content{
+    width: 1300px;
+    /* height: 2150px; */
+    margin-bottom: 40px;
+    /* border-style: dashed; */
+    border-color: blue;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.tour_country_list{
+  
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  /* border-style: dotted;
+  border-color: orange; */
+  text-align: center;
+  /* display: flex; */
+}
+
+.tour_country_list img{
+  /* width: 200px;
+  height: 200px; */
+  /* border-radius: 50%; */
+  /* margin-left: 0px; */
+  /* float: left; */
+  /* display: flex; */
+  border: solid 1.5px black; 
+  
+}
+
+/*  */
+.search_box{
+  display: flex;
+
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.hotel_search_box{
+  border-style: solid;
+  
+  margin-right: 30px;
+  margin-left: auto;  
+  width: 400px;
+}
+
+.hotel_city{
+  margin-bottom: 10px;
+}
+
+.hotel_checkin{
+  margin-bottom: 10px;
+}
+.hotel_checkout{
+  margin-bottom: 10px;
+}
+
+.bus_search_box{
+  border-style: solid;
+  margin-right: auto;
+  width: 400px;
+}
+
+.bus_from_city{
+  margin-bottom: 10px;
+}
+
+.bus_to_city{
+  margin-bottom: 10px;
+}
+.bus_departure_date{
+  margin-bottom: 10px;
+}
+.bus_return_date{
+  margin-bottom: 10px;
+}
+
+
+
+.md_list{
+  display: flex;
+  margin-bottom: 30px;
+  /* border-style: solid; */
+}
+
+
+.md_1{
+  height: 300px;
+  width: 300px;
+  border: dotted;
+  margin-right: 20px;
+  margin-left: auto;
+}
+
+.md_2{
+  height: 300px;
+  width: 300px;
+  border: dotted;
+  margin-right: 20px;
+}
+
+.md_3{
+  height: 300px;
+  width: 300px;
+  border: dotted;
+  margin-right: auto;
+}
+
+/*  */
+.main_grid{
+    /* border-style: double; */
+    
+    width: 1300px;
+    height: 200px;
+    display: inline-flex;
+    
+}
+
+.hotel_bus_search_tab{
+    border: solid;
+    margin-right: 100px;
+    margin-left: 100px;
+    width: 300px;    
+    
+    
+}
+
+.bus_hotel_search_box{
+    display: flex;
+    overflow: hidden;
+    width: 100%;    
+}
+
+.bus_hotel_search_box .hotel_bus_tab_list{
+    display: block;
+}
+
+.home_hotel_search{
+    border: solid;
+    
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    
+    
+}
+
+.home_bus_search{
+    border: solid;
+    text-align: center;
+    width: 150px;
+    height: 30px;    
+}
+.home_search_opt{
+    
+    text-align: center;
+    
+}
+
+.reservation_search_btn{
+    
+    
+}
+
+.recommend_tour{
+    border: solid;
+    margin-right: 100px;
+    width: 300px;
+    position: relative;
+    
+}
+.guide_home_img{
+    border: solid;
+    margin-right: 100px;
+    margin-top: 50px;
+    margin-left: 10px;
+    height: 150px;
+    width: 100px;
+    position: absolute;
+    top: 10%;
+    background-color: bisque;
+}
+
+.recommend_item{
+    border: solid;
+    width: 300px;
+    margin-right: 100px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------footer---------------------------------*/
+.footer {
+    width: 1900px;
+    height: 200px;
+    background-color: #85e7ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-top: 0px; */
+}
+
+
+.tab_area {
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    /* padding: 50px 0; */
+    border: dotted;
+    /* background-color: #85e7ff; */
+  }
+  
+  /*탭메뉴 버튼*/
+.tab_button {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0%;
+  }
+  .tab_button li {
+    float: left;
+    width: 49.5%;
+    background: #4d4d4d;
+    border-radius: 10px 10px 0 0;
+  }
+  .tab_button li a {
+    padding: 10px 0;
+    display: block;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+  }
+  .tab_button li.on {
+    /* background: #7400e0; */
+    background-color: chocolate;
+  }
+  
+  /*탭메뉴 콘텐츠*/
+.tab_cont {
+    width: 100%;
+    /* background: #85e7ff; */
+    display: none;
+    border: solid;
+  }
+  .tab_cont.on {
+    display: flex;
+    border: solid;
+    
+  }
+  .tab_cont div {
+    padding: 20px;
+    
+  }  
+
+  .tab_content_box{
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  /* 슬라이드 */
+  .swiper-container {
+    height:420px;
+    /* border:5px solid silver;
+    border-radius:7px;
+    box-shadow:0 0 20px #ccc inset; */
+  }
+  .swiper-slide {
+    text-align:center;
+    margin-top: 50px;
+    /* display:flex;  */
+    /* 내용을 중앙정렬 하기위해 flex 사용 */
+    /* display: block; */
+    align-items:center; /* 위아래 기준 중앙정렬 */
+    justify-content:center; /* 좌우 기준 중앙정렬 */
+  }
+  .swiper-slide img {
+    box-shadow:0 0 5px #555;
+    max-width:100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */
+    /* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */
+  
+  }
+  /*  */
+
+  /* 슬라이드 링크 글씨 색  */
+  a {
+    text-decoration-line: none;
+  }
+  a:link {
+    color : black;
+  }
+  a:visited {
+    color : black;
+  }
+  a:hover {
+    color : red;
+  }
+  a:active {
+    color : green;
+  }
+
+  .checkbox_name{
+    float: left;
+  }
+
+  /*  */
+
+  .slideshow-image{
+    border-radius:3%;
+    width: 100%;
+    
+    height: 600px;
+    overflow: hidden;
+}
+.mySlides {
+  border-radius:3%;
+  width: 600px;
+  /* height: 350px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.slideshow_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin: auto;
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+/*  */
