@@ -1,0 +1,134 @@
+<!DOCTYPE Html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="g_member.css">
+        <script src="g_member.js"></script>
+        <script src=https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js></script>
+        <title>Create a guide account</title>
+    </head>
+    
+    <body>
+        <!--이미지  'Create a guide account' 감싸는 클래스-->
+        <div class="top_box">
+            <!-- 로고이미지 -->
+            <div class="logo_img"><img src="img/main_logo_T_G.png" ></div>
+             <!-- 'Create a guide account'  텍스트 박스-->
+            <div class="memship_t"><h3>Create a guide account</h3></div>
+        </div><br/>
+         <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
+           <!--input, select 감싸는 클래스-->
+        <div class="form_box">
+        <form class="form_n" name="myForm" action="g_member.jsp" method="post">
+            <!-- 'One ADVENTOUR ID is all you need to access all ADVENTOUR services.'  텍스트 박스-->
+            <h3 class="margin_top margin_btm">One ADVENTOUR ID is all you need to access all ADVENTOUR services.</h3>
+
+            <!-- cc태그는 임의로 만든 태그, 텍스트에 토마토색 입히고 싶어서 임의로 만든 것 -->
+            ID<cc class="star_col_red">*</cc><br/>   <input class="m_size margin_rght" type="text" name="g_id" title="아이디" minlength="8"
+            maxlength="12" placeholder="This will be your new ID." required>
+
+            <input class="s_btn btn_color" type="button" name="g_id_btn" value="duplicate check"><br/>
+
+
+            Password<cc class="star_col_red">*</cc><br/>  <input class="l_size" type="password" name="g_pw" title="비밀번호" minlength="8"
+            maxlength="15" placeholder="Password" required> <br/>
+
+
+            Re-enter password<cc class="star_col_red">*</cc><br/>  <input class="l_size" type="password" name="g_re_pw" title="비밀번호확인" minlength="8"
+            maxlength="15" placeholder="confirm password" required> <br/><div id="result"></div><br/>
+
+
+            Your name<cc class="star_col_red">*</cc><br/>  <input class="s_size_name margin_rght" type="text" name="g_lastname" title="이름" required placeholder="lastname">
+              <input class="m_size" type="text" name="g_firstname" title="이름" required placeholder="firstname"> <br/>
+
+
+            Nickname<cc class="star_col_red">*</cc><br/> <input class="l_size" type="text" name="g_nickname" title="닉네임" placeholder="Nickname"><br/><br/>
+
+
+            <!-- js 파일 필요함. -->
+            Country<cc class="star_col_red">*</cc><br/>
+            <select class="m_size_c_city_slct" name="g_country" title="g_country" required>
+                <option>Country</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Spain</option>
+                <option>United Kingdom</option>
+            </select> 
+            <select class="m_size_c_city_slct margin_lft" name="g_city" title="g_country" required>
+                <option>City</option>
+                <option>France</option>
+                <option>Italy</option>
+                <option>Spain</option>
+                <option>United Kingdom</option>
+            </select> <br/>
+
+            Tour theme<cc class="star_col_red">*</cc><br/>
+            <input class="l_size" type="text" name="g_theme" placeholder="Tour theme" title="theme" required><br/>
+            
+            <!-- 이미지 파일 불러오는 기능 필요함. -->
+            Your picture<cc class="star_col_red">*</cc><br/>
+            <input class="m_size margin_rght" type="text" name="g_img" placeholder="Image" title="g_img" required>
+            <input class="s_btn btn_color" type="button" name="g_img_btn" value="image upload"><br/><br/>
+
+
+            Email<cc class="star_col_red">*</cc> <br/>
+            <input class="m_size margin_rght" type="text" name="g_email" title="email" placeholder="Email" required>
+            
+            <select class="m_size_email_slct" name="g_emaild" title="email" required>
+                <option>Select</option>
+                <option>@gmail.com</option>
+                <option>@hotmail.com</option>
+                <option>@outlook.com</option>
+                <option>@nate.com</option>
+                <option>@hotmail.com</option>
+            </select> <br/>
+            
+
+            Phone number<cc class="star_col_red">*</cc><br/> 
+            
+            <select class="s_size_slct margin_rght" name="g_pnum1" title="연락처" required>
+                <option>Select</option>
+                <option>+33 (France)</option>
+                <option>+39 (Italy)</option>
+                <option>+34 (Spain)</option>
+                <option>+44 (United Kingdom)</option>
+            </select>
+            
+            -<input class="s_size margin_lft margin_rght" type="tel" name="g_pnum1_1" title="연락처1" pattern="[0-9]{4}" minlength="4"
+            maxlength="4" required>-<input class="s_size margin_lft" type="tel" name="g_pnum1_2" title="연락처1" pattern="[0-9]{4}" minlength="4"
+            maxlength="4" required> <br/>
+
+            <!-- js 파일 필요함. -->
+            Date of birth<br/>          
+            <select class="s_size_slct margin_rght" name="g_birth_y" id="year">
+                <option>Year</option>
+            </select>-
+            <select class="s_size_slct margin_lft margin_rght" name="g_birth_m" id="month">
+                <option>Month</option>
+            </select>-
+            <select class="s_size_slct margin_lft" name="g_birth_d" id="day">
+                <option>Day</option>
+            </select>
+            <br/><br/>
+
+            
+            Your gender<br/>
+            <label><input class="gd" type="radio" name="g_gender" title="성별" value="female"> Female </label>
+            <label><input class="gd" type="radio" name="g_gender" title="성별" value="male"> Male </label><br/><br/><br/>
+
+            <div class="all_ck_box">
+                <div class="ck_box">
+                    <label><input class="margin_rght" type="checkbox" name="cked_privacy" required>Announcements
+                    <h6 class="ck_txt">Receive ADVENTOUR announcements emails</h6></label><br/>
+                    <label><input class="margin_rght" type="checkbox" name="cked_slct_agre">Term of Partnership Agreement
+                    <h6 class="ck_txt">We only broker travel agreements between travelers and partners, and we confirm that you are not in an employment relationship with us.</h6></label>
+                </div>
+            </div>
+            <h2 class="star_col_red">* Required input</h2><br/><br/>
+            <input class="l_btn btn_color " type="submit" name="gMsBtn" value="Continue">
+        </form>
+    </div>
+    </body>   
+    </html>
+    <!--페이지 자체의 스타일, 주소 값, 날자 및 이메일, 전화번호에 셀렉사용, -->
