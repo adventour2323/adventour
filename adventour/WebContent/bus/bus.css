@@ -539,85 +539,40 @@ float: right;
   width: 1600px;
   height: 550px;
   margin-top:650px;
+  margin-left: 100px;
   overflow : hidden;
 }  
-.bsale_title{ 
-  width: 1600px;
-  height: 100px;
-  color: red;
-  font-weight: bold;
-  animation: blink-effect 2s step-end infinite;
-  margin-left: 100px;
-}
-@keyframes blink-effect {
-  50% {
-    opacity: 0;
-  }
-}
-/*-----------------------스위퍼 내용--------------------------*/
-
-
-.b_sale ul {
-  margin-top: 5px;
- border:  solid 1px;
- width: 157px;
- height: 90px;
- border-radius: 10px;
-
-}
-.sale1_ul li{
-  list-style: none;
-  font-weight: bold;
-  margin-left: 0px;
-}
-.sale1_rote{
-  font-size: 17px;
-}
-.sale1_time{
-  margin-top: 5px;
-  font-size: 14px;
-}
-.sale1_pri{
-  margin-top: 5px;
-  font-size: 15px;
-  text-decoration: line-through;
-}
-.sale1_spri{
-  margin-top: 5px;
-  font-size:17px;
-  color: red;
-
-}
-.awards .inner {
-  padding: 0;
-  width: 1600px;
+.h_retop10{
+  width: 1350px;
   height: 350px;
+
 }
- .awards  {
-  width: 1570px;
+
+.awards {
+  width: 1350px;
+  height: 350px;
+ border: solid 1px;
+ margin-top: 0px;
+ }
+ 
+ .awards .inner {
+   padding: 0;
+ }
+ .inner{
+  width: 1350px;
+  height: 350px;
+ }
+ .awards .swiper {
+   width: 1250px;
    height: 350px;
-   margin-left:0px;
+   margin-left: 33px;
    overflow: hidden;
    padding-left: 30px;
-   padding-right: 30px;
-   overflow: hidden;
- 
  }
- .swiper {
-  width: 1400px;
-  height: 320px;
-  margin-left:75px;
-  overflow: hidden;
-  padding-left: 0px;
-  padding-right: 0px;
 
-}
-
-
- 
  .swiper-prev,
  .swiper-next {
-   width: 35px;
+   width: 35x;
    height: 35px;
    color:black;
    background-color: white;
@@ -631,35 +586,19 @@ float: right;
  }
  .swiper-prev{
   margin-top: -190px;
-  margin-left: 30px;
+  
  }
 .swiper-next{
   margin-top: -25px;
   float: right;
-  margin-right: 30px;
- }
- .swiper-slide {
-  width: 150px;
-  height: 150px;
-  margin-top: 0px;
-  margin-left:50px;
-  
-  filter: drop-shadow(10px 6px 6px #c3c3c3); /*그림자*/
  }
 
  .swiper-slide img{
   width: 200px;
   height: 200px;
-  margin-top: 10px;
+  margin-top: 25px;
   filter: drop-shadow(10px 6px 6px #c3c3c3); /*그림자*/
  }
-
- 
- 
-
-
-
-
 
 
 

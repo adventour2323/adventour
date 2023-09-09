@@ -224,7 +224,7 @@ $('.barcename').on('mouseleave', function() { //글씨에 마우스가 없으면
   // direction: 'horizontal',
 
   loop: true,
-  spaceBetween: -190,
+  spaceBetween: 15,
   slidesPerView: 5,
   navigation: {
     prevEl: '.awards .swiper-prev',
