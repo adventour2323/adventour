@@ -121,15 +121,18 @@ select{
     margin-top: 5px; 
     margin-bottom: 10px;
 }
-
+/* 성(last name) */
 .s_size_name{
-    width: 175px;
+    /* width: 300px; */
+    width: 200px;
     height: 45px;
     margin-top: 5px; 
     margin-bottom: 10px;
 }
+/* 이름(first name) */
 .m_size{
-  width: 300px;
+  /* width: 175px; */
+  width:275px;
   height: 45px;
   margin-top: 5px; 
   margin-bottom: 10px;

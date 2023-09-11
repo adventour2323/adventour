@@ -86,6 +86,7 @@ window.onload = function () {
         );
 
 
+
         init.onclick = function () {
             for (var ms of mship) {
                 ms.value = generateRandomString(5);
