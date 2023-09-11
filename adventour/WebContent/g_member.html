@@ -10,6 +10,23 @@
         <title>가이드 회원가입</title>
     </head>
     
+    <script>
+    $(document).ready(
+            function () {
+                for (var i = 2023; i > 1900; i--) {
+                    $('#year').append('<option value="' + i + '">' + i + '</option>');
+                }
+                for (var i = 1; i < 13; i++) {
+                    $('#month').append('<option value="' + i + '">' + i + '</option>');
+                }
+                for (var i = 1; i < 32; i++) {
+                    $('#day').append('<option value="' + i + '">' + i + '</option>');
+                }
+            }
+        );
+    </script>
+    
+    
     <body>
         <!--이미지  'Create a guide account' 감싸는 클래스-->
         <div class="top_box">
@@ -27,27 +44,22 @@
             <h3 class="margin_top margin_btm">가이드 활동을 위한 계정을 만들어 주세요</h3>
 
             <!-- cc태그는 임의로 만든 태그, 텍스트에 토마토색 입히고 싶어서 임의로 만든 것 -->
-            	아이디<cc class="star_col_red">*</cc><br/>   <input class="m_size margin_rght" type="text" name="g_id" title="아이디" minlength="8"
-            maxlength="12" placeholder="아이디" required>
+            	아이디<cc class="star_col_red">*</cc><br/>   
+            	<input class="m_size margin_rght" type="text" name="g_id" title="아이디" minlength="8" maxlength="12" placeholder="아이디" required>
+				<input class="s_btn btn_color" type="button" name="g_id_btn" value="중복 확인"><br/>
 
-            <input class="s_btn btn_color" type="button" name="g_id_btn" value="중복확인"><br/>
-
-
-            	비밀번호<cc class="star_col_red">*</cc><br/>  <input class="l_size" type="password" name="g_pw" title="비밀번호" minlength="8"
-            maxlength="15" placeholder="비밀번호" required> <br/>
-
-
-            	비밀번호 확인<cc class="star_col_red">*</cc><br/>  <input class="l_size" type="password" name="g_re_pw" title="비밀번호확인" minlength="8"
-            maxlength="15" placeholder="비밀번호 확인" required> <br/><div id="result"></div><br/>
+            	비밀번호<cc class="star_col_red">*</cc><br/>
+            	<input class="l_size" type="password" name="g_pw" title="비밀번호" minlength="8" maxlength="15" placeholder="비밀번호 " required> <br/>
+            	
+            	비밀번호 확인<cc class="star_col_red">*</cc><br/>
+            	<input class="l_size" type="password" name="g_re_pw" title="비밀번호확인" minlength="8" maxlength="15" placeholder="비밀번호 확인" required><br/>
+            	<div id="result"></div><br/>
 
 
             	이름
-            <cc class="star_col_red">*</cc><br/>
-            <input class="s_size_name margin_rght" type="text" name="g_lastname" title="이름" required placeholder="성">
-            <input class="m_size" type="text" name="g_firstname" title="이름" required placeholder="이름">
-            
-             <br/>
-
+            	<cc class="star_col_red">*</cc><br/>
+            	<input class="s_size_name margin_rght" type="text" name="g_lastname" title="이름" required placeholder="성">
+            	<input class="m_size" type="text" name="g_firstname" title="이름" required placeholder="이름"><br/>
 
             	닉네임
             	<cc class="star_col_red">*</cc><br/> 
@@ -58,26 +70,26 @@
             	국가/도시<cc class="star_col_red">*</cc><br/>
             <select class="m_size_c_city_slct" name="g_country" title="g_country" required>
                 <option>국가</option>
-                <option>영국</option>
-                <option>프랑스</option>
-                <option>스페인</option>
-                <option>이탈리아</option>                
+                <option value="영국">영국</option>
+                <option value="프랑스">프랑스</option>
+                <option value="스페인">스페인</option>
+                <option value="이탈리아">이탈리아</option>                
             </select> 
             
             <select class="m_size_c_city_slct margin_lft" name="g_city" title="g_country" required>
                 <option>도시</option>
-                <option>런던</option>
-                <option>리버풀</option>
-                <option>에든버러</option>
-                <option>파리</option>
-                <option>마르세유</option>
-                <option>모나코</option>
-                <option>마드리드</option>
-                <option>바르셀로나</option>
-                <option>세비야</option>
-                <option>로마</option>
-                <option>베네치아</option>
-                <option>밀라노</option>
+                <option value="런던">런던</option>
+                <option value="리버풀">리버풀</option>
+                <option value="에든버러">에든버러</option>
+                <option value="파리">파리</option>
+                <option value="마르세유">마르세유</option>
+                <option value="모나코">모나코</option>
+                <option value="마드리드">마드리드</option>
+                <option value="바르셀로나">바르셀로나</option>
+                <option value="세비야">세비야</option>
+                <option value="로마">로마</option>
+                <option value="베네치아">베네치아</option>
+                <option value="밀라노">밀라노</option>
             </select> <br/>
 
             	투어 테마<cc class="star_col_red">*</cc><br/>
@@ -86,7 +98,7 @@
             <!-- 이미지 파일 불러오는 기능 필요함. -->
             	이미지<cc class="star_col_red">*</cc><br/>
             <input class="m_size margin_rght" type="text" name="g_img" placeholder="Image" title="g_img" required>
-            <input class="s_btn btn_color" type="button" name="g_img_btn" value="image upload"><br/><br/>
+            <input class="s_btn btn_color" type="button" name="g_img_btn" value="첨부파일"><br/><br/>
 
 
             E-mail<cc class="star_col_red">*</cc> <br/>
@@ -94,10 +106,10 @@
             
             <select class="m_size_email_slct" name="g_emaild" title="email" required>
                 <option>Select</option>
-                <option>@gmail.com</option>
-                <option>@naver.com</option>
-                <option>@nate.com</option>
-                <option>@hanmail.com</option>
+                <option value = "@gmail.com">@gmail.com</option>
+                <option value = "@naver.com">@naver.com</option>
+                <option value = "@nate.com">@nate.com</option>
+                <option value = "@hanmail.com">@hanmail.com</option>
             </select> <br/>
             
 
@@ -105,10 +117,10 @@
             
             <select class="s_size_slct margin_rght" name="g_pnum1" title="연락처" required>
                 <option>Select</option>
-                <option>010</option>
-                <option>600</option>
-                <option>667</option>
-                <option>727</option>
+                <option value="010">010</option>
+                <option value="600">600</option>
+                <option value="667">667</option>
+                <option value="727">727</option>
             </select>
             
             -<input class="s_size margin_lft margin_rght" type="tel" name="g_pnum1_1" title="연락처1" pattern="[0-9]{4}" minlength="4"
@@ -119,15 +131,15 @@
             	생년월일<br/>          
           	<select class="s_size_slct margin_rght" name="g_birth_y" id="year">
                 <option>Year</option>
-                <option value="2023">2023</option>
+                
             </select>-
             <select class="s_size_slct margin_lft margin_rght" name="g_birth_m" id="month">
                 <option>Month</option>
-                <option value="1">1</option>
+                
             </select>-
             <select class="s_size_slct margin_lft" name="g_birth_d" id="day">
                 <option>Day</option>
-                <option value="1">1</option>
+                
             </select> 
             
 
@@ -141,15 +153,17 @@
 
             <div class="all_ck_box">
                 <div class="ck_box">
-                    <label><input class="margin_rght" type="checkbox" name="cked_privacy" required>개인정보 수집 및 이용 동의
+                    <label><input class="margin_rght" type="checkbox" name="cked_privacy" value="agree1" required>개인정보 수집 및 이용 동의
                     <h6 class="ck_txt">당사는 개인정보를 수집 및 이용하며, 목적 외 개인정보를 이용하지 않습니다. 미 동의시 가입에 제한이 있을 수 있습니다. </h6></label><br/>
-                    <label><input class="margin_rght" type="checkbox" name="cked_slct_agre">파트너 약관 동의
+                    <label><input class="margin_rght" type="checkbox" name="cked_slct_agre" value="agree2" required>파트너 약관 동의
                     <h6 class="ck_txt">당사는 플랫폼을 통하여 여행자가 원하는 조건에 맞추어 파트너와 여행계약을 체결하고 서비스를 제공받는 것을 중개하는 업무만을 수행합니다.</h6></label>
                 </div>
             </div>
             <h2 class="star_col_red">* 필수 입력</h2><br/><br/>
             <input class="l_btn btn_color " type="submit" name="gMsBtn" value="회원가입">
         </form>
+        
+        
     </div>
     </body>   
     </html>

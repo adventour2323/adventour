@@ -27,8 +27,8 @@ String g_theme = request.getParameter("g_theme");
 
 String g_img = request.getParameter("g_img");
 
-String g_emil = request.getParameter("g_email");
-String g_emild = request.getParameter("g_emaild");
+String g_email = request.getParameter("g_email");
+String g_emaild = request.getParameter("g_emaild");
 
 String g_pnum1 = request.getParameter("g_pnum1");
 String g_pnum1_1 = request.getParameter("g_pnum1_1");
@@ -43,8 +43,7 @@ String g_gender = request.getParameter("g_gender");
 String g_agree1 = request.getParameter("cked_privacy");
 String g_agree2 = request.getParameter("cked_slct_agre");
 
-g_id, g_pw, g_lastname, g_firstname, g_nickname, g_country, g_city, g_theme, 
-g_img, g_email, g_emaild, g_pnum1, g_pnum1_1, g_pnum1_2, g_birth_y, g_birth_m, g_birth_d, g_gender, g_agree1, g_agree2
+
 
 
  
@@ -60,8 +59,7 @@ try{
    if(conn== null)
       throw new Exception("데이터베이스에 연결할 수 없습니다.");
    stmt = conn.createStatement();
-   String command = String.format("insert into guide(g_id, g_pw, g_lastname, g_firstname, g_nickname,  g_country, g_city, g_theme, g_img, g_email, g_pnum, g_birth_y, g_birth_m, g_birth_d, g_gender, g_agree1, g_agree2) values 
-		   ('"+g_id+"', '"+g_pw+"', '"+g_lastname+"','"+g_firstname+"', '"+g_nickname+"', '"+g_country+"', '"+g_city+"', '"+g_theme+"', '"+g_img+"','"+g_email+g_emaild+"', '"+g_pnum1+g_pnum1_1+g_pnum1_2+ "', '"+g_birth_y+"', '"+g_birth_m+"','"+g_birth_d+"','"+g_gender+"', '"+g_agree1+"','"+g_agree2+"');" );
+   String command = String.format("insert into guide(g_id, g_pw, g_lastname, g_firstname, g_nickname,  g_country, g_city, g_theme, g_img, g_email, g_pnum, g_birth_y, g_birth_m, g_birth_d, g_gender, g_agree1, g_agree2) values('"+g_id+"', '"+g_pw+"', '"+g_lastname+"','"+g_firstname+"', '"+g_nickname+"', '"+g_country+"', '"+g_city+"', '"+g_theme+"', '"+g_img+"','"+g_email+g_emaild+"', '"+g_pnum1+g_pnum1_1+g_pnum1_2+ "', '"+g_birth_y+"', '"+g_birth_m+"','"+g_birth_d+"','"+g_gender+"', '"+g_agree1+"','"+g_agree2+"');" );
 				  
    
     int rowNum = stmt.executeUpdate(command);
