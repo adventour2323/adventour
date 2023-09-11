@@ -14,7 +14,7 @@ if(session.getAttribute("id") == null) {
 <%
 }
 %>
-로그인이 성공하여야만 볼 수 있는 페이지.<br>
+로그인이 성공하여야만 볼 수 있는 페이지.<br> 
  
  
 <%= session.getAttribute("id") %>님 안녕하세요.
