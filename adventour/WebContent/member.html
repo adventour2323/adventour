@@ -3,12 +3,39 @@
     
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="member.css">
-        <!-- <script src="member.js"></script> -->
+        <link rel="stylesheet" href="mem/member.css"> 
+      <!--   <script src="member2.js"></script>-->
         <script src=https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js></script>
+        <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <title>회원가입</title>
     </head>
+<script type="text/javascript">
+    $(document).ready(function() {
+    	$("#m_id_btn").click(function() {
+    	    var m_id = $("#m_id").val();
+    	    $.ajax({
+    	        type: "GET",
+    	        url: "id_dupli.jsp",
+    	        data: { m_id: m_id },
+    	        success: function(response) {
+    	            if (response == "duplicate") {
+    	                alert("중복된 아이디입니다.");
+    	            } else if (response == "success") {
+    	                alert("사용 가능한 아이디입니다.");
+    	            } else {
+    	                alert("오류가1 발생했습니다.");
+    	            }
+    	        },
+    	        error: function() {
+    	            alert("오류가2 발생했습니다.");
+    	        }
+    	    });
+    	});;
+});
     
+
+</script>   
     <body>
         <!--이미지  회원가입 감싸는 클래스-->
         <div class="top_box">
@@ -21,13 +48,13 @@
 
         <!--input, select 감싸는 클래스-->
         <div class="form_box">
-        <form class="form_n" name="myForm" action="member.jsp" method="post">
+        <form class="form_n" name="myForm" action="member2.jsp" method="post">
             <!-- '가입 정보 입력하기'  텍스트 박스-->
             <h3 class="margin_top margin_btm">가입 정보 입력하기</h3>
             <!-- cc태그는 임의로 만든 태그, 텍스트에 토마토색 입히고 싶어서 임의로 만든 것 -->
-            아이디<cc class="star_col_red">*</cc><br/>   <input class="m_size margin_rght" type="text" name="m_id" title="아이디" minlength="8"
+            아이디<cc class="star_col_red">*</cc><br/>   <input class="m_size margin_rght" type="text" id="m_id" name="m_id" title="아이디" minlength="8"
             maxlength="12" placeholder="아이디를 입력해주세요." required>
-            <input class="s_btn btn_color" type="button" name="m_id_btn" value="중복 확인"><br/>
+            <input class="s_btn btn_color" type="button" id="m_id_btn" name="m_id_btn" value="중복 확인"><br/>
             비밀번호<cc class="star_col_red">*</cc><br/>  <input class="l_size" type="password" name="m_pw" title="비밀번호" minlength="8"
             maxlength="15" placeholder="비밀번호(영문+숫자+특수문자 8자 이상)" required> <br/>
             비밀번호 확인<cc class="star_col_red">*</cc><br/>  <input class="l_size" type="password" name="m_re_pw" title="비밀번호확인" minlength="8"
@@ -87,12 +114,15 @@
             생년월일<br/>          
             <select class="s_size_slct" name="m_birth_y" id="year">
                 <option>선택</option>
+                <option>1988</option>
             </select>년
             <select class="s_size_slct margin_lft" name="m_birth_m" id="month">
                 <option>선택</option>
+                <option>01</option>
             </select>월
             <select class="s_size_slct margin_lft" name="m_birth_d" id="day">
                 <option>선택</option>
+                <option>01</option>
             </select>일
             <br/><br/>
 
@@ -108,7 +138,7 @@
                     <label><input class="margin_rght" type="checkbox" name="cked_age" required>만 14세 이상입니다. (필수)</label><br/>
                     <label><input class="margin_rght" type="checkbox" name="cked_terms_use" required>이용약관 동의 (필수)</label><br/>
                     <label><input class="margin_rght" type="checkbox" name="cked_privacy" required>개인정보 수집 및 이용 동의 (필수)</label><br/>
-                    <label><input class="margin_btm margin_rght" type="checkbox" name="cked_slct_agre">할인쿠폰/이벤트/감동적인 뉴스레터 선택 동의 (선택)</label>
+                    <label><input class="margin_btm margin_rght" type="checkbox" name="cked_slct_agre" value="y">할인쿠폰/이벤트/감동적인 뉴스레터 선택 동의 (선택)</label>
                     <h6 class="ck_txt">SMS, 이메일을 통해 쿠폰 및 이벤트 정보를 받아보실 수 있습니다.</h6>
                 </div>
             </div>
