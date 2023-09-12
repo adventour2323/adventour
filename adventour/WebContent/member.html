@@ -19,9 +19,9 @@
     	        url: "id_dupli.jsp",
     	        data: { m_id: m_id },
     	        success: function(response) {
-    	            if (response == "duplicate") {
+    	            if ($.trim(response) =="duplicate" ) {
     	                alert("중복된 아이디입니다.");
-    	            } else if (response == "success") {
+    	            } else if ($.trim(response) == "success") {
     	                alert("사용 가능한 아이디입니다.");
     	            } else {
     	                alert("오류가1 발생했습니다.");

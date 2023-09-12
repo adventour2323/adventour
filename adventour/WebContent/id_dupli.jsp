@@ -28,7 +28,7 @@ if (m_id == null || m_id.trim().isEmpty()) {
             if (stmt != null) {
                 stmt.close();
             }
-        } catch (Exception ignored) {
+        } catch (Exception ignored) { 
         }
         try {
             if (conn != null) {
@@ -58,6 +58,8 @@ out.println("<p>pnum2: " + m_pnum2 + m_pnum2_1 +m_pnum2_2+ "</p>");
 out.println("<p>e-mail:" + m_email + m_emaild+"</p>");
 out.println("<p>birth:" + m_birth_y+ m_birth_m+m_birth_d+"</p>");
 out.println("<p>gender" + m_gender + "</p>");*/
+  
+
 
 %>
 
