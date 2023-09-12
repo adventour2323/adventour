@@ -7,15 +7,62 @@
 <title>login</title>
 </head>
 <body>
-<h1>login</h1>
+    
+        <div class="header">
+
+          <div class="header1">
+
+              
+            <div class="logo">
+             <img class="logo1" src="tour/ADVENTOUR_tour_files/logo.png" alt="Logo">
+          </div><!--logo-->
+
+              <div class="home">
+                <ul class="homeli">
+                <li class="home1"><img class="himg" src="file:///C:/Users/Administrator.User%20-2023JMMNN/Downloads/web_page%20(2)%20(3)%20(2)/img/home.png" alt="(홈 아이콘)"></li>
+                <li class="home1">홈</li>
+                <li class="home1">로그인</li>
+                <li class="home1">회원가입</li>
+                <li class="home1">장바구니</li>
+                <li class="home1">=</li>
+                </ul>
+            </div><!--home-->
+
+          </div><!--header1-->
+          
+          <div class="head11">
+
+            <div class="menu">
+                <ul class="menuli">
+                <li class="menu1">투어</li>
+                <li class="menu1">버스</li>
+                <li class="menu1">호텔</li>
+                <li class="menu1">쇼핑</li>
+                </ul>
+            </div><!--menu-->
+
+          </div><!--header11-->
+
+        </div><!--header-->
+
+        
 <%
 request.setCharacterEncoding("utf-8");
 %>
+<div class="login_form" style="text-align: center;">
+<h3>가이드 로그인</h3>
 <form action="g_login_ing.jsp" method="post">
-	아이디 : <input type="text" name="id"><br>
-	비밀번호 : <input type="password" name="pw"> <br>
+	아이디 : <input type="text" name="id" style="margin-bottom: 10px"><br>
+	비밀번호 : <input type="password" name="pw" style="margin-bottom: 10px"> <br>
 	<input type="submit" value="로그인">
+	<button type="button" onclick="location.href='../g_member.html' ">회원가입</button>
 </form>
+</div>
+
+      <div class="footer">
+          
+
+      </div><!--footer-->
 
 </body>
 </html>
