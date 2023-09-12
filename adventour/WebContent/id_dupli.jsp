@@ -38,6 +38,7 @@ if (m_id == null || m_id.trim().isEmpty()) {
         }
     }
 }
+
 /*response.sendRedirect("이동할 페이지");
 없어도 그만*/ 
 
