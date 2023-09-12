@@ -23,18 +23,18 @@
 
         <!--input, select 감싸는 클래스-->
         <div class="form_box">
-<!--         <form class="form_n" name="myForm" action="mem/member_pjs.jsp" method="post"> -->
-        <form class="form_n" name="myForm" onsubmit="return false;">
+        <form class="form_n" name="myForm" action="mem/member_pjs.jsp" method="post" onsubmit="return validation();">
+<!--         <form class="form_n" name="myForm" onsubmit="return false;"> -->
             <!-- '가입 정보 입력하기'  텍스트 박스-->
             <h3 class="margin_top margin_btm">가입 정보 입력하기</h3>
             <!-- cc태그는 임의로 만든 태그, 텍스트에 토마토색 입히고 싶어서 임의로 만든 것 -->
-            아이디<cc class="star_col_red">*</cc><br/>   <input class="m_size margin_rght no_korean" type="text" name="m_id" title="아이디" minlength="8"
+            아이디<cc class="star_col_red">*</cc><br/>   <input class="m_size margin_rght no_korean" type="text" name="m_id" id="m_id" title="아이디" minlength="8"
             maxlength="12" placeholder="아이디를 입력해주세요." required>
-            <input class="s_btn btn_color" type="button" name="m_id_btn" value="중복 확인"><br/>
+            <div class="id_check"></div><br/>
             비밀번호<cc class="star_col_red">*</cc><br/>  <input class="l_size no_korean" type="password" name="m_pw" title="비밀번호" minlength="8"
-            maxlength="15" placeholder="비밀번호(영문+숫자+특수문자 8자 이상)" required> <br/>
+            maxlength="15" placeholder="비밀번호(영문+숫자+특수문자 8자 이상)" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,15}$" title="Password must contain 8 to 15 characters with at least one letter, one number, and one special character." required> <br/>
             비밀번호 확인<cc class="star_col_red">*</cc><br/>  <input class="l_size" type="password" name="m_re_pw" title="비밀번호확인" minlength="8"
-            maxlength="15" placeholder="비밀번호 확인" required> <br/>
+            maxlength="15" placeholder="비밀번호 확인" pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,15}$" title="Password must contain 8 to 15 characters with at least one letter, one number, and one special character." required> <br/>
             <div id="result"></div><br/>
             
             이름<cc class="star_col_red">*</cc><br/>  <input class="s_size margin_rght" type="text" name="m_lastname" title="이름" required placeholder="성">
@@ -53,7 +53,7 @@
             <input class="s_size margin_lft" type="text" name="m_addr4" id="sample4_extraAddress" placeholder="참고항목"><br/><br/>
             
             email<cc class="star_col_red">*</cc> <br/>
-            <input class="m_size margin_rght" type="text" name="m_email" title="email" placeholder="입력해주세요." required>
+            <input class="m_size margin_rght no_korean" type="text" name="m_email" title="email" placeholder="입력해주세요." required>
             <select class="m_size_email_slct" name="m_emaild" title="email" required>
                 <option>선택</option>
                 <option>@naver.com</option>
@@ -66,7 +66,7 @@
             
             연락처1<cc class="star_col_red">*</cc><br/> 
             <select class="s_size_slct" name="m_pnum1" title="연락처" required>
-                <option>선택</option>
+                <option value="">선택</option>
                 <option>010</option>
                 <option>02</option>
                 <option>031</option>
@@ -77,7 +77,7 @@
             maxlength="4" required> <br/>
             연락처2<br/> 
             <select class="s_size_slct" name="m_pnum2" title="연락처">
-                <option>선택</option>
+                <option value="">선택</option>
                 <option>010</option>
                 <option>02</option>
                 <option>031</option>
@@ -90,20 +90,20 @@
             <!-- js 파일 필요함. -->
             생년월일<br/>          
             <select class="s_size_slct" name="m_birth_y" id="year">
-                <option>선택</option>
+                <option value="">선택</option>
             </select>년
             <select class="s_size_slct margin_lft" name="m_birth_m" id="month">
-                <option>선택</option>
+                <option value="">선택</option>
             </select>월
             <select class="s_size_slct margin_lft" name="m_birth_d" id="day">
-                <option>선택</option>
+                <option value="">선택</option>
             </select>일
             <br/><br/>
 
             
             성별<br/>
-            <label><input class="gd" type="radio" name="m_gender" title="성별" value="female"> 여자 </label>
-            <label><input class="gd" type="radio" name="m_gender" title="성별" value="male"> 남자</label><br/><br/><br/>
+            <label><input class="gd" type="radio" name="m_gender" title="성별" value="F"> 여자 </label>
+            <label><input class="gd" type="radio" name="m_gender" title="성별" value="M"> 남자</label><br/><br/><br/>
 
             <div class="all_ck_box">
                 <div class="ck_al_box">
@@ -117,7 +117,6 @@
                 </div>
             </div>
             <h2 class="star_col_red">* 필수 입력 값</h2><br/><br/>
-<!--             <input class="l_btn btn_color " type="submit" name="msBtn" value="회원 가입"> -->
             <input class="l_btn btn_color " type="submit" name="msBtn" value="회원 가입" >
                 <!-- ---------------------------------------------------------------------------------------------------------------------------------- -->
         </form>
@@ -126,3 +125,4 @@
     <!-- 다음 주소찾기 API js링크-->
     </html>
     <!--페이지 자체의 스타일, 주소 값, 날자 및 이메일, 전화번호에 셀렉사용, -->
+    
