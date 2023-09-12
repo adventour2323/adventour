@@ -48,11 +48,13 @@ String g_agree2 = request.getParameter("cked_slct_agre");
 
  
 
-if( /*입력 값이 있는지 없는지 확인*/
-   g_id == null || g_pw == null  || g_lastname == null || g_firstname == null || g_nickname == null || g_email == null || g_emaild == null ||
-   g_country == null || g_city == null || g_theme == null || g_img == null || g_pnum1 == null || g_pnum1_1 == null || g_pnum1_2 == null || g_birth_y == null ||  g_birth_m == null || g_birth_d == null || g_gender == null )
+/*입력 값이 있는지 없는지 확인*/
+if(g_id == null || g_pw == null || g_lastname == null || g_firstname == null || g_nickname == null || g_country == null || g_city == null || g_theme == null || g_img == null || g_email == null || g_emaild == null || g_pnum1 == null || g_pnum1_1 == null || g_pnum1_2 == null || g_birth_y == null || g_birth_m == null || g_birth_d == null || g_gender == null || g_agree1 == null || g_agree2 == null )
    throw new Exception("누락된 데이터가 있습니다.");
+
+
 Connection conn = null; Statement stmt = null;
+
 try{
    Class.forName("com.mysql.jdbc.Driver"); /*데이테베이스에 연결*/
    conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adventour?characterEncoding=utf8","root","qhdks12!@");
@@ -62,8 +64,8 @@ try{
    String command = String.format("insert into guide(g_id, g_pw, g_lastname, g_firstname, g_nickname,  g_country, g_city, g_theme, g_img, g_email, g_pnum, g_birth_y, g_birth_m, g_birth_d, g_gender, g_agree1, g_agree2) values('"+g_id+"', '"+g_pw+"', '"+g_lastname+"','"+g_firstname+"', '"+g_nickname+"', '"+g_country+"', '"+g_city+"', '"+g_theme+"', '"+g_img+"','"+g_email+g_emaild+"', '"+g_pnum1+g_pnum1_1+g_pnum1_2+ "', '"+g_birth_y+"', '"+g_birth_m+"','"+g_birth_d+"','"+g_gender+"', '"+g_agree1+"','"+g_agree2+"');" );
 				  
    
-    int rowNum = stmt.executeUpdate(command);
-   
+   int rowNum = stmt.executeUpdate(command);
+	
    if(rowNum < 1)
       throw new Exception("데이터를 DB에 입력할 수 없습니다.");
    
