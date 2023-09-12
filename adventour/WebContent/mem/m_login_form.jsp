@@ -46,18 +46,18 @@
         </div><!--header-->
 
         
-<%
-request.setCharacterEncoding("utf-8");
-%>
-<div class="login_form" style="text-align: center;">
-<h3>가이드 로그인</h3>
-<form action="g_login_ing.jsp" method="post">
-	아이디 : <input type="text" name="id" style="margin-bottom: 10px"><br>
-	비밀번호 : <input type="password" name="pw" style="margin-bottom: 10px"> <br>
-	<input type="submit" value="로그인">
-	<button type="button" onclick="location.href='../g_member.html' ">회원가입</button>
-</form>
-</div>
+	<%
+	request.setCharacterEncoding("utf-8");
+	%>
+	<div class="login_form" style="text-align: center;">
+			<h3>로그인</h3>
+		<form action="m_login_ing.jsp" method="post">
+			아이디 : <input type="text" name="id" style="margin-bottom: 10px"><br>
+			비밀번호 : <input type="password" name="pw" style="margin-bottom: 10px"> <br>
+			<input type="submit" value="로그인">
+			<button type="button" onclick="location.href='../member.html' ">회원가입</button>
+		</form>
+	</div>
 
       <div class="footer">
           
