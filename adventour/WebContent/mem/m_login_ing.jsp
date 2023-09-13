@@ -20,7 +20,7 @@
 	Connection conn = null;
 	ResultSet rs = null;
 	PreparedStatement pstmt = null;
-	try 
+	try {
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adventour","root","0521");
 		String sql = "select count(*) as cnt from guide where g_id=? and g_pw=?";

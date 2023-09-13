@@ -20,7 +20,7 @@ String pw = request.getParameter("pw");
 Connection conn = null;
 ResultSet rs = null;
 PreparedStatement pstmt = null;
-try 
+try {
 out.println("111");
 out.println(id);
 Class.forName("com.mysql.jdbc.Driver");
