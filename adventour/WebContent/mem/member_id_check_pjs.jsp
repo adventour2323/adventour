@@ -3,7 +3,6 @@
 	member_pjs.html의 m_id값이 중복인지 확인하기 위한 jsp
 */
 
-
 request.setCharacterEncoding("UTF-8");
 String m_id = request.getParameter("m_id");
  
