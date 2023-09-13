@@ -49,7 +49,6 @@ m_gender = m_gender == null ? "" : m_gender;
 // 	m_gender = "sdfdsfd";
 // }
 
-
 String m_agree = request.getParameter("cked_slct_agre");
 m_agree = "true".equals(m_agree) ? "Y" : "N";	
 
@@ -84,7 +83,6 @@ if(m_birth_m == null){throw new Exception("m_birth_m is null");}
 if(m_birth_d == null){throw new Exception("m_birth_d is null");}
 // if(m_gender == null){throw new Exception("m_gender is null");}
 if(m_agree == null){throw new Exception("m_agree is null");}
-
 
 out.print("==");
 out.print(m_gender);
