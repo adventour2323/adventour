@@ -1,0 +1,388 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+*{
+    font-family: 'Pretendard-Regular';
+} 
+
+
+body {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  width: 1903px;
+  height: 1680px;
+  overflow-x: hidden;
+}
+ 
+
+  .header {
+    width: 100%;
+    height: 130px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: rgb(20, 3, 78);
+  }
+  
+  .header1 {
+    width: 100%;
+    height: 130px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   
+  li {
+    list-style: none;
+    float: left;
+  }
+  
+  .logo {
+    width: 270px;
+    height: 108px;
+    margin: auto;
+    margin-top: 10px;
+    margin-left: 800px;
+    text-align: center;
+    color:rgb(236, 236, 162);
+  
+  }
+  .logo1{
+    width: 270px;
+    height: 108px;
+  }
+
+  .home {
+    width: 400px;
+    height: 25px;
+    margin-bottom: 55px;
+    margin-right: 270px;
+    float: right;
+    font-size: 16px;
+    font-weight: 800;
+  }
+
+  .home11 {
+    width: 40px;
+    height: 25px;
+    margin-right: 10px;
+    text-align: center;
+    float: right;
+  }
+  
+  .home1 {
+    width: 60px;
+    height: 25px;
+    margin-right: 10px;
+    text-align: center;
+    float: right;
+  }
+  
+
+  .himg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .head11 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+  }
+  
+  .menu {
+    width: 500px;
+    height: 40px;
+    display: flex;
+    float: left;
+    margin-left: 400px;
+  
+  }
+  
+  .menuli {
+    font-weight: bold;
+    font-size: 22px;
+    margin-top: 10px;
+    padding-left: 0px;
+    text-align: center;
+  }
+  
+  .menu1,.menu2,.menu4{
+    margin-right: 20px;
+    width: 80px;
+    height: 30px;
+    color:rgb(20, 3, 78);
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(153, 171, 233);
+    border-radius: 15px 15px 0px 0px;
+  }
+  .menu3{
+    margin-right: 20px;
+    width: 80px;
+    height: 30px;
+    background-color:rgb(117, 165, 236);
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color:rgb(117, 165, 236);
+    border-radius: 15px 15px 0px 0px;
+  }
+  
+    .mimg {
+      width: 30px;
+      height: 30px;
+      padding-top: 0px;
+    }
+/*----------------------------------------content---------------------------*/
+
+  .content {
+    width: 1100px;
+    /* height: 1300px; */
+    /* margin-top: -700px; */
+    margin-top: 50px;
+    margin-left: 400px;
+    /* border-style: dashed; */
+    border-width:1px;
+   
+  } 
+
+.search_img{
+    height: 500px;
+    /* border: dotted; */
+    position: relative;
+    margin-top: 50px;
+    
+}
+
+.search_box_frame{
+    position: absolute;
+    height: 50px;
+    width: 500px;
+    /* border: solid; */
+    left: 35%;
+    top: 50%;
+    text-align: center;
+    float: left;
+    
+    
+}
+
+.search_box{
+ 
+}
+
+.search_btn{
+    
+}
+
+
+/* .content{
+    width: 1300px;
+    height: 2150px;
+    border-style: dashed;
+    border-color: blue;
+    
+    margin-left: 300px; */
+    /* margin-top: 50px;
+} */
+
+
+
+
+.guide_of_the_month{
+    border: dotted;
+    width: 1100px;
+    background-color: blue;
+    display: flex;
+}
+
+.guidelist{
+  border-style: double;
+  background-color: red;
+}
+
+.guide_region{
+  border-style: dashed;
+  background-color: yellowgreen;
+}
+
+
+
+.tour_banner{
+  /* border: solid; */
+  width: 1100px;
+  margin-top: 100px;
+  /* text-align: center; */
+}
+
+.recommend_city{
+  display: flex;
+  
+  
+  width: 1100px;
+  margin-top: 100px;
+  text-align: center;
+}
+
+.recommend_ticket{
+  /* border: solid; */
+  width: 1100px;
+  margin-top: 100px;
+  /* text-align: center; */
+}
+
+/* 가이드 탭  */
+
+.guide_region_tab {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-size: x-large;
+  text-align: center;
+        
+}
+
+.guide_region_tab li {
+  float: left;
+  
+  margin-right: 10px;
+  border-radius: 10px 10px 0 0;
+  
+  
+}
+
+.guide_region_tab li a {
+  display: inline;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.guide_list {
+  display: none;
+  
+  /* background-color:yellow; */
+  padding: 6px 12px;
+  color:black;
+  /* border-style: solid; */
+  border-top: solid;
+  border-bottom: solid;
+  text-align: center;  
+}
+
+ul.guide_region_tab li.on{
+  /* background-color: yellow; */
+  /* border-style: solid; */
+  border-top: solid;
+  border-right: solid;
+  border-left: solid;
+  
+}
+.guide_list.on {
+  display: block;
+}
+
+.guide_img_list{
+  width: 200px;
+  
+  
+}
+
+
+/* 가이드 탭 */
+
+
+
+.recommend_city1{
+  margin-right: auto;
+  margin-left: auto;
+}
+.recommend_city2{
+  margin-right: auto;
+  margin-left: auto;
+}
+.recommend_city3{
+  margin-right: auto;
+  margin-left: auto;
+}
+.recommend_city4{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------footer---------------------------------*/
+.footer {
+    width: 1900px;
+    height: 200px;
+    background-color: #85e7ff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+}
+
+/*  이미지 회전 */
+.slideshow-image{
+  border-radius:3%;
+  width: 100%;
+  
+  height: 600px;
+  overflow: hidden;
+}
+.mySlides {
+border-radius:3%;
+width: 600px;
+/* height: 350px; */
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.slideshow_container {
+display: flex;
+justify-content: center;
+position: relative;
+margin: auto;
+}
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+a {
+  text-decoration-line: none;
+}
+a:link {
+  color : black;
+}
+a:visited {
+  color : black;
+}
+a:hover {
+  color : red;
+}
+a:active {
+  color : green;
+}
+
+/*  */
