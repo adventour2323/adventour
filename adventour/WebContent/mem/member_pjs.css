@@ -1,0 +1,206 @@
+*{
+    max-width: 1903px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* h태그 마진 및 패딩 값 초기화 */
+h1,h2,h3,h4,h5,h6{
+    margin: 0px;
+    padding: 0px;
+}
+/* input 태그 대표 적용 */
+input{
+    padding-left: 10px;
+    font-style: normal;
+    border-radius: 7px;
+    border: 2px solid rgb(49, 49, 90)!important;
+}
+/* select 태그 대표 적용 */
+select{
+    font-style: normal;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid rgb(49, 49, 90);
+}
+/* 로고이미지 및 '회원가입' 텍스트박스 감싸는 클래스 */
+.top_box{
+    width: 900px;
+    height: 100px;   
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* 로고이미지 박스 */
+.logo_img img{
+    width: 300px;
+    height: 45px;
+    margin-left: 300px;
+    margin-right: 300px;
+    float: left;
+    /* margin: 0px 0px 10px 120px; */
+}
+/* 회원가입 텍스트 박스 */
+.memship_t h3{
+    width: 900px;
+    height: 35px;
+    float: left;
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 0px 15px 0px;
+    color: rgb(2, 2, 90);
+    border: solid rgb(17, 27, 17);
+    border-width: 0px 0px 5px 0px;
+}
+/* ----------------------------------------------------------------------------------------------------------------------------------  */
+
+/*form 전체 박스 클래스*/
+.form_box{
+    width: 590px;
+    height: 1790px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* form 전체 박스 안의 작은 박스, 패딩 한 번에 주고 싶어서 만든 것. */
+.form_n{
+    width: 550px;
+    height: 1790px;
+    padding-left: 50px;
+    float: left;
+}
+/* 폼 '정보입력'박스 클래스 */
+.form_n h3{
+    opacity: 0.5;
+    margin-left: 150px;
+    color: rgb(2, 2, 90);
+    font-size: 25px;
+}
+
+/* 체크박스 박스 클래스 */
+.all_ck_box{
+    width: 550px;
+    height: 252px;
+}
+/* 모두체크하기 체크박스 박스 클래스 */
+.ck_al_box{
+    width: 540px;
+    height: 35px;
+    float: left;
+    padding: 5px 0px 5px 10px;
+    border: solid rgb(36, 82, 36);
+    border-width: 1.5px 0px 1px 0px;
+}
+/* 필수 및 선택 사항 전체 박스 클래스 */
+.ck_box{
+    width: 540px;
+    height: 180px;
+    float: left;
+    padding: 5px 0px 0px 10px;
+    border: solid rgb(17, 27, 17);
+    border-width: 0px 0px 1px 0px;
+}
+/* 체크 박스 오른쪽 텍스트 스타일 클래스 */
+.ck_txt{
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    color: lightslategray;}
+    
+/* ----------------------------------------------------------------------------------------------------------------------------------  */
+/* 스타일 주는 클래스 */
+
+/* 주소 API id */
+#guide{
+    color:#999;display:none"
+}
+/* ------------------개별 마진 클래스------------------------  */
+.margin_lft{
+margin-left: 20px!important;
+}
+
+.margin_rght{
+    margin-right: 20px!important;
+}
+.margin_btm{
+    margin-bottom: 20px!important;
+}
+.margin_top{
+    margin-top: 20px!important;
+}
+/* ------------------인풋 클래스 주기 -------------------------  */
+/* 작은 사이즈 텍박 */
+.s_size{
+    width: 140px;
+    height: 45px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+.sm_size{
+    width: 235px;
+    height: 45px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+.m_size{
+    width: 330px;
+    height: 45px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+.l_size{
+    width: 510px;
+    height: 45px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+/* ------------------셀렉 클래스주기-------------------------  */
+/* 작은 사이즈 셀렉박 */
+.s_size_slct{
+    width: 145px;
+    height: 51px;
+    margin: 5px 0px 10px 0px;
+}
+    
+.m_size_email_slct{
+    width: 165px;
+    height: 51px;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+
+/* ------------------버튼클래스 주기-------------------------  */
+/* 스몰 버튼 기본 클래스 */
+.s_btn{
+    width: 155px;
+    height: 51px;
+    opacity: 0.7;
+    color: white;
+}
+/* 라지 버튼 기본 클래스 */
+.l_btn{
+    width: 550px;
+    height: 55px;
+    font-size: 25px;
+    opacity: 0.7;
+    color: white;
+    margin-bottom: 100px;
+}
+/* 버튼 스타일 클래스 */
+.btn_color{
+    opacity: 0.8;
+    background-color: rgb(114, 114, 156);
+}
+
+/* 텍스트 스타일 클래스 */
+.star_col_red{
+    color: tomato;
+}
+
+input[type="radio"]{
+    
+}
+/* 체크박스 네모 크기 조절 클래스 */
+input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+}

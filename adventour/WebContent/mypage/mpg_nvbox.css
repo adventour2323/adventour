@@ -1,10 +1,10 @@
-/*mpg_nvbox.css */
-
-
-/* menuli클래스 하위 li에 마우스 오버일때 글자색 변경*/
-.menuli > li:hover {
-    color: white;
-    background-color: rgb(20, 3, 78);
+/*mpg_nvbox.css*/
+*{
+	list-style: none;
+}
+/*------------------메인 네비 컨테인한 박스-------------------*/
+.mainNCB {
+    display: flex;
 }
 
 /*------------마이페이지 메뉴네비 전체 세로 박스--------------*/
@@ -14,7 +14,7 @@
     padding: 0px;
     margin: 0px;
     text-align: center;
-    border: 1px solid rgb(20, 3, 78);
+    border: 1px solid  rgb(20, 3, 78);
     box-shadow: 5px 5px 5px gray;
 }
 
@@ -26,7 +26,7 @@
     font-size: 20px;
     margin: 10px 5px 5px 6px;
     border-width: 1px;
-    border: 1px solid rgb(20, 3, 78);
+    border: 1px solid  rgb(20, 3, 78);
 }
 /*회원 닉네임 박스*/
 .mainNB p{
@@ -36,7 +36,7 @@
     font-size: 15px;
     margin: 0px;
     padding: 2px 0px 0px 1.5px;
-    border: solid rgb(20, 3, 78);
+    border: solid  rgb(20, 3, 78);
     border-width: 0px 0px 1px 0px;
 }
 
@@ -47,7 +47,7 @@
     float: left;
     font-size: 20px;
     font-weight: bolder;
-    color: rgb(96, 71, 180);
+    color:  rgb(96, 71, 180);
     margin: -2px 0px 0px -2px;
     border-width: 0px 0px 0px 0px;
     border-color: white;
