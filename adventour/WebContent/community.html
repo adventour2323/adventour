@@ -3,10 +3,10 @@
 
 <head>
   <meta charset="utf-8">
-  <title>여정공유 게시판</title>
-  <link rel="stylesheet" type="text/css" href="community.css">
+  <title>게시판 작성</title>
+  <link rel="stylesheet" type="text/css" href="community/community.css">
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="community.js"></script>
+  <script src="community/community.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
   </head>
@@ -16,8 +16,8 @@
   <div class="header">
 
     <div class="header1">
-      <img id="logo" width="210px" height="30px" src="img/logo123.png">
-     
+    <img id="logo" width="210px" height="30px" src="img/logo123.png">
+     <!--<img id="logo" width="210px" height="30px" src="C:\Users\1\Desktop\adventour-master\adventour-master\adventour\WebContent\img\logo123.png">-->
 
      
       <div class="home">
@@ -38,7 +38,7 @@
         <li class="menu2"><button class="moveb" ><p>버스</p> </li>
           <li class="menu3"><button class="moveh" onclick = "location.href = 'hotel.html' "><p>호텔</p></button> </li>
         <li class="menu4"><button class="moves" onclick = "location.href = 'shop_index.html' "><p>쇼핑</p></button> </li>
-        <li class="menu5"><button class="movec" onclick = "location.href = 'shop_index.html' "><p> 게시판</p></button> </li>
+        <li class="menu5"><button class="movec" onclick = "location.href = 'shop_index.html' "><p>고객센터</p></button> </li>
         <li class="menu6"><button class="movem" onclick = "location.href = 'shop_index.html' "><p>마이페이지</p></button> </li>
       </ul>
     </div><!--menu-->
@@ -84,37 +84,77 @@
 </div><!--schtop-->
 
 <form name="c_form" action="community.jsp">
+
   <div class="c_div" name="c_div">
+    <h2> < 여행여정 공유 > </h2>
 
-    <div class="c_num" name="c_num">
-      <input type="text"
-    </div><!--c_num-->
+    <div class="c_info_div">
+     <div class="c_writer_div" name="c_writer_div">
+       작성자 : <div class="c_writer" name="c_writer">아이디이이이이</div>
+     </div><!--c_writer_div-->
 
-    <div class="c_title" name="c_title">
+     <div class="c_date_div" name="c_date_div">
+       작성날짜 : <p id="clock" class="c_date" name="c_date" >c_date</p>
+     </div><!--c_date_div-->
 
-    </div><!--c_title-->
+     <!-- <div class="c_num_div" name="c_num_div"> 
+      글번호 : <div class="c_num" name="c_num" >00001</div>
+     </div><!--c_num_div-->
 
-    <div class="c_writer" name="c_writer">
-
-    </div><!--c_writer-->
-
-    <div class="c_date" name="c_date">
-
-    </div><!--c_title-->
-
-    <div class="c_con" name="c_con">
-
-    </div><!--c_title-->
-
-    
+   </div><!--c_info_div-->
 
 
 
+    <div class="c_title_div" name="c_title_div">
+      제목 : <input type="text" class="c_title" name="c_title" placeholder="제목을 입력하세요.">
+    </div><!--c_title_div-->
 
+    <div class="c_city_div" name="c_city_div">
+      <select class="c_country" name="c_country">
+        <option>공유할 나라를 선택하세요.</option>
+         <option value="uk">영국</option>
+         <option value="ity">이탈리아</option>
+         <option value="fra">프랑스</option>
+         <option value="spa">스페인</option>
+      </select>
+      <select  class="c_city" name="c_city">
+        <option>공유할 도시를 선택하세요.</option>
+        <option value="lond">런던</option>
+        <option value="liv">리버풀</option>
+        <option value="eden">에든버러</option>
+        <option value="roma">로마</option>
+        <option value="vene">베네치아</option>
+        <option value="mila">밀라노</option>
+        <option value="paris">파리</option>
+        <option value="mars">마르세유</option>
+        <option value="mona">모나코</option>
+        <option value="mard">마드리드</option>
+        <option value="barc">바르셀로나</option>
+        <option value="sev">세비야</option>
+      </select>
+    </div><!--c_city_div-->
+  
+ 
+    <div class="c_con_div" name="c_con_div">
+      <textarea class="c_con" name="c_con" placeholder="내용을 입력하세요."></textarea>
+    </div><!--c_con_div-->
 
-
-
-
+    <h4 class="c_pho_title" name="c_pho_title"> * 이미지파일 첨부(선택)  </h4>
+    <div class="c_pho1_div" name="c_pho1_div">
+      이미지1 : <input type="text" class="c_pho" name="c_pho1" placeholder="이미지1을 첨부하세요.">
+    </div><!--c_pho1_div-->
+    <div class="c_pho_div" name="c_pho2_div">
+      이미지2 : <input type="text" class="c_pho" name="c_pho2" placeholder="이미지2을 첨부하세요.">
+    </div><!--c_pho1_div-->
+    <div class="c_pho_div" name="c_pho3_div">
+      이미지3 : <input type="text" class="c_pho" name="c_pho3" placeholder="이미지3을 첨부하세요.">
+    </div><!--c_pho1_div-->
+    <div class="c_pho_div" name="c_pho4_div">
+      이미지4 : <input type="text" class="c_pho" name="c_pho4" placeholder="이미지4을 첨부하세요.">
+    </div><!--c_pho1_div-->
+    <div class="c_pho_div" name="c_pho5_div">
+      이미지5 : <input type="text" class="c_pho" name="c_pho5" placeholder="이미지5을 첨부하세요.">
+    </div><!--c_pho1_div-->
 
 
 
@@ -126,42 +166,37 @@
 
 </form>
 
+<footer>
+  <div class="footerB">
+<!--     로드된 푸터래요 -->
+      <!-- 푸터 네비박스-->
+      <div class="fNvB">
+          <!--푸터 네비 왼쪽 마진때문에 쩔 수 없이 만든 div임 -->
+          <div></div>
+          <nav><a href="tour.html">가이드투어</a></nav>
+          <nav><a href="bus.html">버스</a></nav>
+          <nav><a href="hotel.css">호텔</a></nav>
+          <nav><a href="shop_index.html">쇼핑몰</a></nav>
+          <nav><a href="">고객센터</a></nav>
+          <nav><a href="">게시판</a></nav>
+          <nav><a href="">장바구니</a></nav>
+          <nav><a href="mypage_index.html">마이페이지</a></nav>
+          <nav><a href="">회원가입</a></nav>
+          <nav><a href="">로그인</a></nav>
+      </div>
+      <!-- 푸터 회사 정보 박스-->
+      <div class="fInfoB">
+          <span><a><img src="img/main_logo_T_G.png"></a></span>
 
-  
 
-  <footer>
-    <div class="footerB">
-        <!-- 푸터 네비박스-->
-        <div class="fNvB">
-            <!--푸터 네비 왼쪽 마진때문에 쩔 수 없이 만든 div임 -->
-            <div></div>
-            <nav><a href="tour.html">가이드투어</a></nav>
-            <nav><a href="bus.html">버스</a></nav>
-            <nav><a href="hotel.css">호텔</a></nav>
-            <nav><a href="shop_index.html">쇼핑몰</a></nav>
-            <nav><a href="">고객센터</a></nav>
-            <nav><a href="">게시판</a></nav>
-            <nav><a href="">장바구니</a></nav>
-            <nav><a href="mypage_index.html">마이페이지</a></nav>
-            <nav><a href="">회원가입</a></nav>
-            <nav><a href="">로그인</a></nav>
-        </div>
-        <!-- 푸터 회사 정보 박스-->
-        <div class="fInfoB">
-            <span><a><img src="img/logo123.png" title="logo"></a></span>
-            <span>
-                <p><a>회사주소</br></br> 우리 회사 개쩔어</br> 우리 회사 개쩔어</br> 우리 회사 개쩔어</br> 우리 회사 개쩔어</br>
-                    </a></p>
-            </span>
-            <span>
-                <p><a>회사 정보</br></br> 우리 회사 개쩔어</br> 우리 회사 개쩔어</br> 우리 회사 개쩔어</br> 우리 회사 개쩔어</br>
-                    </a></p>
-            </span>
-        </div>
-    </div>
+          <span>
+              <p>법인명: (유) ADVENTOUR 대표자: 그린컴퓨터학원 사업자등록번호 000-87-1111001 통신판매업: 제2023-서울강남구-9123호  관광사업자 등록번호 제1993-000006호<br>주소 : 서울특별시 강남구 테헤란로 5길 24 그린컴퓨터 아카데미 강남캠퍼스, 5층 대표전화 : 02-6951-5933 (가맹문의 : 02-6951-5933)
+                  <br>COPYRIGHT (C) GREEN ADVENTOUR . All Rights Reserved.
+              </p>
+          </span>
+      </div>
+  </div>
 </footer><!---->
-
-  
 
 </body>
 

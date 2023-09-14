@@ -15,7 +15,7 @@ body {
   margin-left: 0px;
   margin-bottom: 0px;
   width: 1903px;
-  height: 1500px;
+  height: 2600px;
 
 }
 /*---------------------------헤더-------------------------------------*/
@@ -159,24 +159,24 @@ float: right;
   width: 100px;
   height: 32px;
   text-align: center;
-  background-color: rgb(20, 3, 78);
+  background-color: #fff;
   border-style: solid;
   border-width: 2px 2px 0px 2px;
   border-color: #fff;
   border-radius: 15px 15px 0px 0px;
-  color: white; /* 흰색으로 변경 */
+  color:rgb(20, 3, 78);
 }
 .movec{
   font-size: 18px;
   font-weight: bold;
   width: 100px;
   height: 32px;
-  color:rgb(20, 3, 78);
+  color:#fff;
   border-style: solid;
   border-width: 2px 2px 0px 2px;
   border-color: #fff;
   border-radius: 15px 15px 0px 0px;
-  background-color: #fff;
+  background-color: rgb(20, 3, 78);
   margin-left: 10px;
 }
 .movem{
@@ -246,81 +246,127 @@ float: right;
   font-weight: bold;
 }
 /*-------------------------------커뮤니티 입력----------------------------*/
-.c_div{
+.c_div{ /*작성 폼전체*/
   border: solid 1px;
   width:  1300px;
   height: 1200px;
   margin-left: 200px;
   margin-top: -30px;
 }
+.c_info_div{/*작성자 + 닐짜*/
 
-
-
- /*-----------------------------footer---------------------------------*/
- .footerB {
-  width: 100%;
-  height: 200px;
-  text-align: center;
-  align-items: center;
-  background-color:rgb(117, 165, 236);
-  margin-bottom: 0px;
-}
-
-/*푸터네비 전체박스*/
-.fNvB{
-  width: 100%;
-  height: 35px;
-  opacity: 1;
-  color: white;
-  border-top: 0.5px solid rgb(117, 165, 236);
-  border-bottom: 0.5px solid white;
-}
-
-/* 왼쪽 마진때문에 어쩔 수 없이 만든 애*/
-.fNvB div{
-  width: 70px;
+  width:  1050px;
   height: 20px;
-  float: left;
-  margin-left: 550px;
-}
-/* .fNvB{
-  width: 1300px;
-  height: 35px;
-} */
-
-/*푸터네비 개별 박스*/
-.fNvB nav{
-  width: 70px;
-  height: 20px;
-  float: left;
-  font-size: 15px;
-  font-weight: bold;
-  padding: 15px 5px 0px 5px;
-}
-
-
-/*로고이미지, 회사주소 전체 박스*/
-.fInfoB {
-  width: 1300px;
-  height: 130px;
-  opacity: 1;
-  margin-left: 180px;
-}
-
-/*로고이미지, 회사 주소 개별 박스*/
-.fInfoB img{
-  width: 200px;
-  height: 80px;
-  float: left;
-  margin-right: 200px;
-  padding: 35px 0px 0px 0px;
-}
-
-.fInfoB p{
-  width: 400px;
-  height: 100px;
-  float: left;
-  color: white;
+  margin-left: 100px;
+  margin-top: 40px;
   font-size: 13px;
-  padding: 10px 0px 0px 0px;
 }
+.c_writer_div{/*작성자*/
+
+  width:  200px;
+  height: 20px;
+  margin-left: 0px;
+  
+}
+.c_writer{ /*작성자 디비받기 */
+
+  width:  140px;
+  height: 20px;
+  margin-left: 50px;
+  margin-top: -15px;
+}
+.c_date_div{/*날짜*/
+
+  width:  280px;
+  height: 20px;
+  margin-left: 190px;
+  margin-top: -20px;
+}
+.c_date{/*디비 현재시간으로 자동설정 부여*/
+
+  width:  200px;
+  height: 20px;
+  margin-left: 60px;
+  margin-top: -15px;
+}
+.c_num_div{/*글번호*/
+
+  width:  120px;
+  height: 20px;
+  margin-left: 480px;
+  margin-top: -20px;
+  }
+.c_num{/*글번호 디비 자동부여*/
+ 
+  width:  60px;
+  height: 20px;
+  margin-left: 55px;
+  margin-top: -15px;
+}
+.c_title_div{/*제목*/
+ 
+  width:  1100px;
+  height: 40px;
+  margin-left: 100px;
+  margin-top: 20px;
+  }
+  .c_title{
+  width:  1050px;
+  height: 30px;
+  }
+.c_city_div{
+ 
+  width:  1000px;
+  height: 30px;
+  margin-left: 140px;
+  margin-top: 10px;
+}  
+
+.c_con_div{ /*글 내용*/
+
+  width:  1100px;
+  height: 600px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.c_con{/*글내용 작성*/
+  width:  1100px;
+  height: 600px;
+}
+.c_pho_title{
+  width:  600px;
+  height: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+.c_pho1_div{/*사진 첨부파일*/
+
+  width:  600px;
+  height: 30px;
+  margin-left: 100px;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.c_pho_div{/*사진 첨부파일*/
+
+  width:  600px;
+  height: 30px;
+  margin-left: 100px;
+  font-size: 13px;
+}
+.c_pho{/*사진 이름 작성란*/
+  width:  350px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+
+.c_btn{
+
+  width:  70px;
+  height: 20px;
+  margin-left: 600px;
+  margin-top: 30px;
+}
+
+
