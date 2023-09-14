@@ -55,7 +55,8 @@
 			아이디 : <input type="text" name="id" style="margin-bottom: 10px"><br>
 			비밀번호 : <input type="password" name="pw" style="margin-bottom: 10px"> <br>
 			<input type="submit" value="로그인">
-			<button type="button" onclick="location.href='../member.html' ">회원가입</button>
+			<button type="button" onclick="location.href='../member.html' ">회원 가입</button>
+			<button type="button" style="margin-top: 10px;" onclick="location.href='../g_member.html' ">가이드 가입</button>
 		</form>
 	</div>
 
