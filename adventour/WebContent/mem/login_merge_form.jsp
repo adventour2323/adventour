@@ -51,7 +51,7 @@
 	%>
 	<div class="login_form" style="text-align: center;">
 			<h3>로그인</h3>
-		<form action="mlogin_merge.jsp" method="post">
+		<form action="login_merge.jsp" method="post">
 			아이디 : <input type="text" name="id" style="margin-bottom: 10px"><br>
 			비밀번호 : <input type="password" name="pw" style="margin-bottom: 10px"> <br>
 			<input type="submit" value="로그인">
