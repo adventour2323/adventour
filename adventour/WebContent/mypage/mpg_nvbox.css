@@ -1,16 +1,9 @@
 /*mpg_nvbox.css*/
-*{
-	list-style: none;
-}
-/*------------------메인 네비 컨테인한 박스-------------------*/
-.mainNCB {
-    display: flex;
-}
 
 /*------------마이페이지 메뉴네비 전체 세로 박스--------------*/
 .mainNB {
     width: 185px;
-    height: 850px;
+    height: 832px;
     padding: 0px;
     margin: 0px;
     text-align: center;
@@ -95,8 +88,7 @@
 ul{
     margin: 0px;
 }
-
-
+/* 하위 네비 리스트 마우스오버할 경우 mpg_nvbox.js에서 사용하는 클래스*/
 nav.enter{
     color: white;
     background-color: rgb(20, 3, 78);   

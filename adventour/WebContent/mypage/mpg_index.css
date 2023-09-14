@@ -1,12 +1,6 @@
 /* mypage_index.css */
 
-*{
-	list-style: none;
-}
-ul{
-    margin: 0px;
-}
-/* menuli클래스 하위 li에 마우스 오버일때 글자색 변경*/
+/*-- menuli클래스 하위 li에 마우스 오버일때 글자색 변경--*/
 .menuli > li:hover {
     color: white;
     background-color:  rgb(20, 3, 78);
@@ -78,8 +72,11 @@ ul{
     float: left;
     margin: 0px 0px 0px 0px;
     font-size: 25px;
-}    
-
+}
+/* --------메인 네비와 빠른 예약, 캘린더 컨테인한 박스------- */
+.mainNCB{
+    display: flex;
+}
 /*----------가장 빠른 예약, 캘린더 전체 박스----------*/
 .mrMcalB{
     margin: 0px  0px 0px 50px;

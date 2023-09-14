@@ -1,28 +1,8 @@
-@font-face {
-    font-family: 'Pretendard-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
+/*footer.css*/
 
-* {
-    font-family: 'Pretendard-Regular';
-    border-color: #84BF96;
-    /* color: rgb(78, 126, 110); */
-    color:rgb(20, 3, 78);
-    text-decoration: none;
-    color: inherit;
-}
 
-body {
-  width: 1903px;
-  margin: 0px;
-  overflow-x: hidden;
-}
-
-/*---------------------------���-------------------------------------*/
 /*-----------------------------footer---------------------------------*/
-/*Ǫ�� ��ü �ڽ�*/
+/*푸터 전체 박스*/
 .footerB {
     width: 100%;
     height: 200px;
@@ -31,7 +11,7 @@ body {
     background-color:  rgb(117, 165, 236);
   }
   
-  /*Ǫ�ͳ׺� ��ü�ڽ�*/
+ /*푸터 네비 전체 박스*/
   .fNvB{
     width: 100%;
     height: 35px;
@@ -42,7 +22,7 @@ body {
     padding-bottom: 3px;
 }
 
-/* ���� ���������� ��¿ �� ���� ���� ��*/
+/*푸터 네비 개별 박스 모양*/
 .fNvB div{
     width: 70px;
     height: 20px;
@@ -54,7 +34,7 @@ body {
     height: 35px;
 } */
 
-/*Ǫ�ͳ׺� ���� �ڽ�*/
+/*푸터 네비 개별 박스*/
 .fNvB nav{
     width: 70px;
     height: 20px;
@@ -65,7 +45,7 @@ body {
 }
 
 
-/*�ΰ��̹���, ȸ���ּ� ��ü �ڽ�*/
+/*푸터 인포 전체 박스(로고이미지, 회사 정보 등)*/
 .fInfoB {
     width: 1300px;
     height: 130px;
@@ -74,7 +54,7 @@ body {
     background-color: rgb(117, 165, 236);
 }
 
-/*�ΰ��̹���, ȸ�� �ּ� ���� �ڽ�*/
+/*푸터 로고 이미지 박스*/
 .fInfoB img{
     width: 250px;
     height: 45px;
@@ -84,7 +64,7 @@ body {
     margin-top: 18px;
     padding: 35px 0px 0px 0px;
 }
-
+/*푸터 회사 정보 글씨 박스*/
 .fInfoB p{
     width: 900px;
     height: 100px;

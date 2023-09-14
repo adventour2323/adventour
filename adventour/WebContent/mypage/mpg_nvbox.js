@@ -30,4 +30,7 @@ $(document).ready(function() {
     paymentUl.on('mouseleave', function(){
         paymentNav.removeClass('enter');
     });
+
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
 });

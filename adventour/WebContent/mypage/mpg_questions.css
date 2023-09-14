@@ -61,7 +61,7 @@
 .mainTB {
     width: 1050px;
     height: 50px;
-    padding:0px;
+    padding-left: 250px;
     border-width: 0px;
     font-weight: bold;
 }
@@ -73,3 +73,7 @@
     margin: 0px 0px 0px 0px;
     font-size: 25px;
 }    
+/* --------메인 네비와 컨텐츠를 컨테인한 박스------- */
+.mainNCB{
+    display: flex;
+}
