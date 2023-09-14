@@ -10,6 +10,73 @@
     font-family: 'Pretendard-Regular';
 } 
 
+/*  */
+/* 가이드 탭 리스트  */
+ 	.tab_list {
+            /* min-width: 320px;
+            max-width: 800px; */
+            width: 1000px;
+            padding: 50px;
+            margin: 0 auto;
+            background: #ffffff;}
+
+        /* section { */
+        	#guide_uk {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd;}
+            
+            #guide_fr {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd;}
+            
+            #guide_es {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd;}
+            
+            #guide_ita {
+            display: none;
+            padding: 20px 0 0;
+            border-top: 1px solid #ddd;}
+
+        /*라디오버튼 숨김*/
+
+              
+		#tab1, #tab2, #tab3, #tab4  {
+              display: none;}
+	
+		.g_label {
+        
+            display: inline-block;
+            margin: 0 0 -1px;
+            padding: 15px 25px;
+            font-weight: 600;
+            text-align: center;
+            color: #bbb;
+            border: 1px solid transparent;}
+		
+		.g_label:hover{
+            color: #2e9cdf;
+            cursor: pointer;}
+
+        /*input 클릭시, label 스타일*/
+        input:checked + .g_label {
+              color: #555;
+              border: 1px solid #ddd;
+              border-top: 2px solid #2e9cdf;
+              border-bottom: 1px solid #ffffff;}
+
+        #tab1:checked ~ #guide_uk,
+        #tab2:checked ~ #guide_fr,
+        #tab3:checked ~ #guide_es,
+        #tab4:checked ~ #guide_ita {
+            display: block;}
+
+
+/*  */
+
 
 body {
   margin-top: 0px;
@@ -204,15 +271,6 @@ body {
     display: flex;
 }
 
-.guidelist{
-  border-style: double;
-  background-color: red;
-}
-
-.guide_region{
-  border-style: dashed;
-  background-color: yellowgreen;
-}
 
 
 
@@ -239,67 +297,6 @@ body {
   /* text-align: center; */
 }
 
-/* 가이드 탭  */
-
-.guide_region_tab {
-  list-style: none;
-  margin: 0px;
-  padding: 0px;
-  overflow: hidden;
-  font-size: x-large;
-  text-align: center;
-        
-}
-
-.guide_region_tab li {
-  float: left;
-  
-  margin-right: 10px;
-  border-radius: 10px 10px 0 0;
-  
-  
-}
-
-.guide_region_tab li a {
-  display: inline;
-  color: black;
-  text-align: center;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.guide_list {
-  display: none;
-  
-  /* background-color:yellow; */
-  padding: 6px 12px;
-  color:black;
-  /* border-style: solid; */
-  border-top: solid;
-  border-bottom: solid;
-  text-align: center;  
-}
-
-ul.guide_region_tab li.on{
-  /* background-color: yellow; */
-  /* border-style: solid; */
-  border-top: solid;
-  border-right: solid;
-  border-left: solid;
-  
-}
-.guide_list.on {
-  display: block;
-}
-
-.guide_img_list{
-  width: 200px;
-  
-  
-}
-
-
-/* 가이드 탭 */
 
 
 
@@ -385,65 +382,3 @@ a:active {
   color : green;
 }
 
-/* 가이드 탭 리스트  */
- 	.tab_list {
-            /* min-width: 320px;
-            max-width: 800px; */
-            width: 1000px;
-            padding: 50px;
-            margin: 0 auto;
-            background: #ffffff;}
-
-        /* section { */
-        	#guide_uk {
-            display: none;
-            padding: 20px 0 0;
-            border-top: 1px solid #ddd;}
-            
-            #guide_fr {
-            display: none;
-            padding: 20px 0 0;
-            border-top: 1px solid #ddd;}
-            
-            #guide_es {
-            display: none;
-            padding: 20px 0 0;
-            border-top: 1px solid #ddd;}
-            
-            #guide_ita {
-            display: none;
-            padding: 20px 0 0;
-            border-top: 1px solid #ddd;}
-
-        /*라디오버튼 숨김*/
-
-              
-		#tab1, #tab2, #tab3, #tab4  {
-              display: none;}
-	
-		.g_label {
-        
-            display: inline-block;
-            margin: 0 0 -1px;
-            padding: 15px 25px;
-            font-weight: 600;
-            text-align: center;
-            color: #bbb;
-            border: 1px solid transparent;}
-		
-		.g_label:hover{
-            color: #2e9cdf;
-            cursor: pointer;}
-
-        /*input 클릭시, label 스타일*/
-        input:checked + .g_label {
-              color: #555;
-              border: 1px solid #ddd;
-              border-top: 2px solid #2e9cdf;
-              border-bottom: 1px solid #ffffff;}
-
-        #tab1:checked ~ #guide_uk,
-        #tab2:checked ~ #guide_fr,
-        #tab3:checked ~ #guide_es,
-        #tab4:checked ~ #guide_ita {
-            display: block;}
