@@ -8,7 +8,6 @@
 * {
     font-family: 'Pretendard-Regular';
     border-color: #84BF96;
-    /* color: rgb(78, 126, 110); */
     color:rgb(20, 3, 78);
     text-decoration: none;
     color: inherit;
@@ -20,7 +19,7 @@ body {
   overflow-x: hidden;
 }
 
-/*---------------------------ï¿½ï¿½ï¿½-------------------------------------*/
+/*---------------------------Çì´õ-------------------------------------*/
 .header {
   width: 1903px;
   height: 132px;
@@ -30,7 +29,7 @@ body {
   color: rgb(20, 3, 78);
 }
 
- /* --------------ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Î°ï¿½ ï¿½ï¿½ È¨ ï¿½Þ´ï¿½-----------------*/ 
+/* --------------Çì´õ¾È ·Î°í ¹× È¨ ¸Þ´º-----------------*/ 
  #logo{
   margin-top: 10px;
   margin-left: 400px;   
@@ -166,7 +165,7 @@ float: right;
   border-width: 2px 2px 0px 2px;
   border-color: #fff;
   border-radius: 15px 15px 0px 0px;
-  color: white; /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ */
+  color: white; /* Èò»öÀ¸·Î º¯°æ */
 }
 .movec{
   font-size: 18px;
@@ -194,8 +193,8 @@ float: right;
   background-color: #fff;
   margin-left: 25px;
 }
-/*ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½Ù¿ï¿½Þ´ï¿½*/
-/*top ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½Þ´ï¿½*/
+/*½½¶óÀÌµå ´Ù¿î¸Þ´º*/
+/*top ½½¶óÀÌµå¸Þ´º*/
 .schtop{
   z-index:2;
   position: absolute;

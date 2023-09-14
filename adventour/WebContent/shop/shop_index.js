@@ -2,7 +2,7 @@
 
 $(document).ready(function () {
 
-        // 나라, 도시, 카테고리 등등 정보. 나중에 파일 또는 디비에서 가져올 예정
+    // 나라, 도시, 카테고리 등등 정보. 나중에 파일 또는 디비에서 가져올 예정
     // 순서 보장을 위해 object.array가 아니라 object.object 사용
     // 길이를 알기 위해서 Object.keys(obj).length 사용
     var contryDatas = {
@@ -172,15 +172,15 @@ $(document).ready(function () {
         // "2": { "engNm": "France", "korNm": "프랑스" },
         // "3": { "engNm": "Spain", "korNm": "스페인" }
         if(type == 'United Kingdom'){
-            mainImg.src = 'shop_img/uk_shop_main.jpg';
+            mainImg.src = 'shop/shop_img/uk_shop_main.jpg';
         } else if(type == 'Italy'){
-            mainImg.src = 'shop_img/italy_shop_main.jpg';
+            mainImg.src = 'shop/shop_img/italy_shop_main.jpg';
         } else if(type == 'France'){
-            mainImg.src = 'shop_img/france_shop_main.jpg';
+            mainImg.src = 'shop/shop_img/france_shop_main.jpg';
         } else if(type == 'Spain'){
-            mainImg.src = 'shop_img/spain_shop_main.jpg';
+            mainImg.src = 'shop/shop_img/spain_shop_main.jpg';
         } else {
-            mainImg.src = 'shop_img/main_beach.jpg';
+            mainImg.src = 'shop/shop_img/main_beach.jpg';
         }
     }
 
@@ -291,6 +291,7 @@ $(document).ready(function () {
         }
     });
     
+    // 가이드 투어 연계 상품 이미지 슬라이드
     function slideImages() {
         const movePercentage = -(currentIndex * 33.33); 
         currentIndex = (currentIndex + 1) % 3; // 0, 1, 2 순환
@@ -299,13 +300,10 @@ $(document).ready(function () {
         // const container = document.getElementById('guidSlide');
         // const movePercentage = -(currentIndex * 33.33); // 33.33%는 5개의 상품에 해당하는 너비
         // container.style.transform = `translateX(${movePercentage}%)`;
-
     }
-    
     setInterval(slideImages, 3000);
 
-    // 가이드 투어 연계 상품 이미지 슬라이드
-
+    //헤더 푸터 로드
     $("#header").load("header.html");
     $("#footer").load("footer.html");
 

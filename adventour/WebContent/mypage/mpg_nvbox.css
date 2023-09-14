@@ -1,0 +1,103 @@
+/*mpg_nvbox.css*/
+*{
+	list-style: none;
+}
+/*------------------메인 네비 컨테인한 박스-------------------*/
+.mainNCB {
+    display: flex;
+}
+
+/*------------마이페이지 메뉴네비 전체 세로 박스--------------*/
+.mainNB {
+    width: 185px;
+    height: 850px;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    border: 1px solid  rgb(20, 3, 78);
+    box-shadow: 5px 5px 5px gray;
+}
+
+/*회원 이미지*/
+.mainNB span img{
+    width: 170px;
+    height: 200px;
+    float: left;
+    font-size: 20px;
+    margin: 10px 5px 5px 6px;
+    border-width: 1px;
+    border: 1px solid  rgb(20, 3, 78);
+}
+/*회원 닉네임 박스*/
+.mainNB p{
+    width: 184px;
+    height: 20px;
+    float: left;
+    font-size: 15px;
+    margin: 0px;
+    padding: 2px 0px 0px 1.5px;
+    border: solid  rgb(20, 3, 78);
+    border-width: 0px 0px 1px 0px;
+}
+
+/*마이페이지 가이드 투어 예약하기 버튼*/
+.mainNB input {
+    width: 184px;
+    height: 30px;
+    float: left;
+    font-size: 20px;
+    font-weight: bolder;
+    color:  rgb(96, 71, 180);
+    margin: -2px 0px 0px -2px;
+    border-width: 0px 0px 0px 0px;
+    border-color: white;
+    background-color: white;
+}
+
+/*마이페이지 메인페이지 버튼*/
+.mainNB nav:nth-child(4) {
+    color: white;
+    width: 183px;
+    border-top-width: 0px;
+    border-right-width: 1px;
+    background-color: rgb(20, 3, 78);
+}
+
+.mainNB nav:nth-child(5) {
+    border-width: 0px;
+}
+
+/*세로박스 네비 상위 목록*/
+.mainNB nav {
+    width: 184px;
+    height: 28px;
+    float: left;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 0px;
+    padding: 2px 0px 0px 1.5px;
+    border: solid rgb(96, 71, 180);
+    border-width: 1px 0px 1px 0px;
+}
+
+/*세로박스 리스트 ex> -나의 문의글 등*/
+.mainNB li {
+    width: 182px;
+    height: 23px;
+    float: left;
+    font-size: 18px;
+    text-align: left;
+    margin-left: -40px;
+    padding: 3px 0px 5px 5px;
+    border-width: 0px;
+}
+
+ul{
+    margin: 0px;
+}
+
+
+nav.enter{
+    color: white;
+    background-color: rgb(20, 3, 78);   
+}

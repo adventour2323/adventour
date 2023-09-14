@@ -1,0 +1,75 @@
+/* mypage_questions.css */
+
+/* menuli클래스 하위 li에 마우스 오버일때 글자색 변경*/
+.menuli > li:hover {
+    color: white;
+    background-color:  rgb(20, 3, 78);
+}
+/* background-color: blue; */
+
+.mainNB input:hover{
+    color: white;
+    background-color: rgb(20, 3, 78);
+}
+
+.mainNB nav:nth-child(n+3):hover,  
+.mainNB nav:nth-child(n+3):hover,
+.mainNB nav:nth-child(n+3):hover, 
+.mainNB nav:nth-child(n+3):hover, 
+.mainNB nav:nth-child(n+3):hover
+{
+    color: white;
+    background-color: rgb(20, 3, 78);
+}
+
+.menuli {
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+    padding-left: 0px;
+    text-align: center;
+}
+
+.menu1,
+.menu2,
+.menu3,
+.menu4 {
+    margin-right: 5px;
+    width: 100px;
+    height: 30px;
+    color: rgb(20, 3, 78);
+    border-style: solid;
+    border-width: 1px;
+    border-color:  rgb(20, 3, 78);
+    border-radius: 10px 10px 10px 10px;
+}
+/* 
+.mimg {
+    width: 30px;
+    height: 30px;
+    padding-top: 0px;
+} */
+
+/*메인 전체 박스*/
+.alMainB{
+    width: 1050px;
+    height: 1050px;
+    margin: 50px 425px 0px 440px;
+    border-width: 0px;
+}
+/*-------메인페이지 텍스트 박스--------*/
+.mainTB {
+    width: 1050px;
+    height: 50px;
+    padding:0px;
+    border-width: 0px;
+    font-weight: bold;
+}
+
+.mainTB p{
+    width: 800px;
+    height: 50px;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    font-size: 25px;
+}    

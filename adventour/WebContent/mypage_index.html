@@ -3,55 +3,18 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="header_footer.css">
-    <link rel="stylesheet" href="mypage_index.css">
+    <link rel="stylesheet" href="mypage/mpg_index.css">
     <script src=https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.0.js></script>
-    <script src="mypage_index.js"></script>
-    <!-- <script src="//t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script> -->
-    <title>마이페이지/메인페이지</title>
+    <script src="mypage/mpg_index.js"></script>
+    <title>mypage/mainpage</title>
 </head>
 
 
 <body>
-
-    <div class="header">
-
-        <div class="header1">
-
-            <!-- <div class="htitle">
-           h1 class="hbtitle">BUS</h1>
-          </div> htitle      -->
-            <div class="logo">
-              <img class="logo1" src="img/main_logo_T_G.png">
-            </div><!--logo-->
-
-            <div class="home">
-                <ul class="homeli">
-                    <li class="home11">메뉴</li>
-                    <li class="home1">장바구니</li>
-                    <li class="home1">회원가입</li>
-                    <li class="home1">로그인</li>
-                    <li class="home11"> 홈</li>
-                </ul>
-            </div><!--home-->
-
-        </div><!--header1-->
-
-        <div class="head11">
-
-            <div class="menu">
-                <ul class="menuli">
-                    <li class="menu1"><a href="tour_home_index.html"> 투어 </a></li>
-                    <li class="menu2"><a href="bus.html"> 버스 </a></li>
-                    <li class="menu3"><a href="hotel.html"> 호텔 </a></li>
-                    <li class="menu4"><a href="shop_index.html"> 쇼핑 </a></li>
-                </ul>
-            </div><!--menu-->
-
-        </div><!--header11-->
-
-    </div> <!--header-->
-    <!-------------------------헤더 끝-------------------------->
+	<header>
+		<!-- header.html import-->
+    	<div id="header"></div>
+	</header>
 
     <!-- 메인 컨텐츠 전체 박스 -->
     <div class="alMainB">
@@ -63,43 +26,15 @@
         <!--메인 네비 컨테인한 박스 -->
         <div class="mainNCB"> 
 
-            <!--마이페이지 메뉴 박스(세로)-->
-            <div class="mainNB">
-                <span><img src="shop_img/R.png"></span>
-                <p>회원 닉네임</p>
-                <nav>
-                    <input type="button" name="gdBtn" value="가이드 투어 예약하기">
-                </nav>
-                <nav>메인페이지</nav>
-                <nav>내정보</nav>
-                <nav id="likeNav">내 찜 목록</nav>
-                <ul id="likeUl">
-                    <li><a> - 가이드투어</a></li>
-                    <li><a> - 버스</a></li>
-                    <li><a> - 호텔</a></li>
-                    <li><a> - 쇼핑몰</a></li>
-                </ul>
-                <nav id="myTextNav">내가 쓴 글</nav>
-                <ul id="myTextUl">
-                    <li><a> - 나의 문의</a></li>
-                    <li><a> - 나의 후기</a></li>
-                    <li><a> - 나의 게시글</a></li>
-                    <li><a> - 내가 쓴 댓글</a></li>
-                </ul>
-                <nav id="paymentNav">결제내역</nav>
-                <ul id="paymentUl">
-                    <li><a> - 투어</a></li>
-                    <li><a> - 버스</a></li>
-                    <li><a> - 호텔</a></li>
-                    <li><a> - 쇼핑몰</a></li>
-                </ul>
-            </div>
+            <!-- mpg_nvbox.html import-->
+            <div id="mpg_nvbox"></div>
+            
             <!--예약박스확인 및 캘린더 묶는 상자-->
             <div class="mrMcalB">
                 <!--가장 빠른 예약 박스-->
                 <div class="mainRB">
                     <p>가장 빠른 예약</p>
-                    <span><img src="shop_img/london_hotel_mp.jfif"></span>
+                    <span><img src="mypage/mypage_img/london_hotel_mp.jfif"></span>
                     <div>
                         <p>HOTEL  Elegance</p>
                         <p>결제 일시 : 2023-08-07</p>
@@ -113,42 +48,14 @@
                 <!--캘린더 박스-->
                 <div class="mainCalB">
                     <P>캘린더 (일정)</P>
-                    <div><img src="shop_img/8m_calendar_mypage.jpg"></div>
+                    <div><img src="mypage/mypage_img/8m_calendar_mypage.jpg"></div>
                 </div>
             </div>
         </div>
         
     </div>
-    
-    <!----------------------푸터 시작------------------------->
-    <footer>
-        <div class="footerB">
-            <!-- 푸터 네비박스-->
-            <div class="fNvB">
-                <!--푸터 네비 왼쪽 마진때문에 쩔 수 없이 만든 div임 -->
-                <div></div>
-                <nav><a href="tour.html">가이드투어</a></nav>
-                <nav><a href="bus.html">버스</a></nav>
-                <nav><a href="hotel.css">호텔</a></nav>
-                <nav><a href="shop_index.html">쇼핑몰</a></nav>
-                <nav><a href="">고객센터</a></nav>
-                <nav><a href="">게시판</a></nav>
-                <nav><a href="">장바구니</a></nav>
-                <nav><a href="mypage_index.html">마이페이지</a></nav>
-                <nav><a href="">회원가입</a></nav>
-                <nav><a href="">로그인</a></nav>
-            </div>
-            <!-- 푸터 회사 정보 박스-->
-            <div class="fInfoB">
-                <span><a><img src="img/main_logo_T_G.png" title="logo"></a></span>
-                <span>
-                    <p>법인명: (유) ADVENTOUR 대표자: 그린컴퓨터학원 사업자등록번호 000-87-1111001 통신판매업: 제2023-서울강남구-9123호  관광사업자 등록번호 제1993-000006호<br>주소 : 서울특별시 강남구 테헤란로 5길 24 그린컴퓨터 아카데미 강남캠퍼스, 5층 대표전화 : 02-6951-5933 (가맹문의 : 02-6951-5933)
-                        <br>COPYRIGHT (C) GREEN ADVENTOUR . All Rights Reserved.
-                    </p>
-                </span>
-            </div>
-        </div>
-    </footer><!---->
+   	<!-- footer.html import-->
+	<div id="footer"></div>
 </body>
 
 </html>

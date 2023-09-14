@@ -1,4 +1,5 @@
  
+create database adventour;
 use adventour; 
 
 
@@ -11,7 +12,7 @@ CREATE TABLE member (
   m_postcode varchar(50) NOT NULL,
   m_addr1 varchar(50) NOT NULL,
   m_addr2 varchar(50) NOT NULL,
-  m_pum1  varchar(11) NOT NULL,
+  m_pnum1  varchar(11) NOT NULL,
   m_pnum2 varchar(11),
   m_email varchar(100) NOT NULL,
   m_birth_y varchar(4),
@@ -19,5 +20,5 @@ CREATE TABLE member (
   m_birth_d varchar(2),
   m_gender varchar(1),
   m_agree varchar(1),
- PRIMARY KEY(m_id);
+ PRIMARY KEY(m_id)
 );
