@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%><%@ page import= "java.sql.*" %>
 <%
-/* html에서 작성한 내용 변수로 받아오기 */
+/* member.js의 회원가입 ajax와 연동 */
 request.setCharacterEncoding("UTF-8");
+
 String m_id = request.getParameter("m_id"); 
 
 String m_pw = request.getParameter("m_pw"); 
@@ -84,12 +85,9 @@ if(m_birth_d == null){throw new Exception("m_birth_d is null");}
 // if(m_gender == null){throw new Exception("m_gender is null");}
 if(m_agree == null){throw new Exception("m_agree is null");}
 
-out.print("==");
-out.print(m_gender);
-out.print("==");
-
 Connection conn = null; 
 Statement stmt = null;
+int rowNum = 0;
 try{
 	Class.forName("com.mysql.jdbc.Driver"); /*데이테베이스에 연결*/
 	conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adventour?characterEncoding=utf8","root","dkssud2!!");
@@ -101,7 +99,7 @@ try{
 									+m_pnum2+m_pnum2_1+m_pnum2_2+ "','"+m_email+m_emaild+"', '"+m_birth_y+"', '"+m_birth_m+"','"+m_birth_d+"','"+m_gender+"','"+m_agree+"');" );
 					
 	
-	int rowNum = stmt.executeUpdate(command);
+	rowNum = stmt.executeUpdate(command);
 	
 //	if(rowNum < 1)
 //		throw new Exception("데이터를 DB에 입력할 수 없습니다.");
@@ -127,3 +125,12 @@ try{
 없어도 그만*/ 
 
 %>
+
+
+<%-- <% --%>
+<!--  if(rowNum > 0){ -->
+<!--  	out.print("<script>alert('회원가입 완료');</script>"); -->
+<!--  }else{ -->
+<!--  	out.print("<script>alert('회원가입 실패');</script>"); -->
+<!--  } -->
+<%-- %> --%>
