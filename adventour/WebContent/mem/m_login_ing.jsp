@@ -35,7 +35,7 @@
 		if(rs.getString("cnt").equals("1")) {
 		session.setAttribute("id",id);
 		session.setAttribute("pw",pw);
-		response.sendRedirect("g_login_end.jsp"); 
+		response.sendRedirect("m_login_end.jsp"); 
 		}else {
 		response.sendRedirect("g_login_done.jsp");
 		}

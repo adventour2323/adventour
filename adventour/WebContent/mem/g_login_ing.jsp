@@ -20,33 +20,34 @@ String pw = request.getParameter("pw");
 Connection conn = null;
 ResultSet rs = null;
 PreparedStatement pstmt = null;
-try {
-out.println("111");
-out.println(id);
-Class.forName("com.mysql.jdbc.Driver");
-out.println("222");
-out.println(pw);
-conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adventour","root","qhdks12!@");
-String sql = "select count(*) as cnt from guide where g_id=? and g_pw=?";
+		try {
+	out.println("111");
+	out.println(id);
+	Class.forName("com.mysql.jdbc.Driver");
+	ut.println("222");
+	out.println(pw);
+	conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/adventour","root","qhdks12!@");
+	String sql = "select count(*) as cnt from guide where g_id=? and g_pw=?";
 
-pstmt = conn.prepareStatement(sql); 
-pstmt.setString(1, id);
-pstmt.setString(2, pw);
-rs = pstmt.executeQuery(); 
-rs.next();
+	pstmt = conn.prepareStatement(sql); 
+	pstmt.setString(1, id);
+	pstmt.setString(2, pw);
+	rs = pstmt.executeQuery(); 
+	rs.next();
  
  
-if(rs.getString("cnt").equals("1")) {
-session.setAttribute("id",id);
-session.setAttribute("pw",pw);
-response.sendRedirect("g_login_end.jsp"); 
-}else {
-response.sendRedirect("g_login_done.jsp");
-}
+	if(rs.getString("cnt").equals("1")) {
+		session.setAttribute("id",id);
+		session.setAttribute("pw",pw);
+		/* response.sendRedirect("g_login_end.jsp"); */
+		response.sendRedirect("../index.html");
+			}else {
+		response.sendRedirect("g_login_done.jsp");
+			}
  
-}catch(Exception e) {
+		}catch(Exception e) {
  
-}
+		}
 %>
 
 </body>

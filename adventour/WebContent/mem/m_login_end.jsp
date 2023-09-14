@@ -19,6 +19,6 @@ if(session.getAttribute("id") == null) {
  
 <%= session.getAttribute("id") %>님 안녕하세요.
  
-<a href=g_logout.jsp>로그아웃</a>
+<a href=m_logout.jsp>로그아웃</a>
 </body>
 </html>
